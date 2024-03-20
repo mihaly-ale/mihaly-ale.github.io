@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect"
+				href="https://fonts.googleapis.com" />
+	<link rel="preconnect"
+				href="https://fonts.gstatic.com"
+				crossorigin />
+	<link rel="shortcut icon"
+				href="content/logo/favicon(6).ico" />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tourney:wght@100..900&display=swap"
+				rel="stylesheet" />
+	<link rel="stylesheet"
+				href="./dist/css/styles.css" />
+
+	<title>Mihaly Ale | Web developer</title>
+</head>
+
+<body>
+	<header>
+		<div class="bg-color-wrapper">
+			<div class="width-wrapper">
+				<nav class="navbar">
+					<a href="index.html">
+						<img class="sitelogo"
+								 src="content/logo/sitelogo-dark-bg.svg"
+								 alt="Site logo." />
+					</a>
+					<ul class="navbar-list">
+						<li><a class="navbar-link active"
+								 href="#home">Home</a></li>
+						<li><a class="navbar-link"
+								 href="projects.html">Projects</a></li>
+						<li><a class="navbar-link"
+								 href="about.html">About me</a></li>
+					</ul>
+				</nav>
+				<section class="section welcome">
+					<h1 class="page-title"
+							id="home">
+						<span>Your</span> Online <br />Presence Made Easy
+					</h1>
+					<p class="page-subtitle">Affordable Web Solutions</p>
+					<img class="hero-image"
+								 src="content/images/hero-image.png"
+								 alt="" />
+					<div class="cta">
+						<a href="#projects"
+							 class="button cta-btn">
+							<img class="cta-btn_icon"
+									 src="content/logo/work-icon.svg"
+									 alt="Icon with cogs." />
+							My work
+						</a>
+						<a href="content/mihaly-ale-cv.pdf"
+							 class="button cta-btn"
+							 download>
+							<img class="cta-btn_icon"
+									 src="content/logo/resume-icon.svg"
+									 alt="Icon with cv." />
+							My CV
+						</a>
+						<a href="#contact"
+							 class="button cta-btn cta-btn_contact">
+							<img class="cta-btn_icon"
+									 src="content/logo/contact-icon.svg"
+									 alt="Icon with mail." />
+							Contact
+						</a>
+
+					</div>
+				</section>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="section projects"
+						 id="projects">
+			<div class="width-wrapper">
+				<h2 class="section-title">Projects</h2>
+
+				<div class="projects_grid">
+					<a href="https://github.com/mihaly-ale/odinProject-calculator"
+						 class="project-tile" target="_blank">
+						<h3 class="project-tile_title">Online Calculator</h3>
+						<img src="content/images/calculator-thumbnail.png"
+								 alt="Thumbnail of The Odin Project calculator project."
+								 class="project-tile_thumbnail" />
+					</a>
+					<a href="https://github.com/mihaly-ale/odinProject-EtchASketch"
+						 class="project-tile" target="_blank">
+						<h3 class="project-tile_title">Etch-a- Sketch</h3>
+						<img src="content/images/etchasketch-thumbnail.png"
+								 alt="Thumbnail of The Odin Project Etch_a-Sketch project."
+								 class="project-tile_thumbnail" />
+					</a>
+					<a href="https://github.com/mihaly-ale/freecodecamp-product-page/"
+						 class="project-tile" target="_blank">
+						<h3 class="project-tile_title">Product landing page</h3>
+						<img src="content/images/product-thumbnail.png"
+								 alt="thumbnail of freecodecamp product landing page project"
+								 class="project-tile_thumbnail" />
+					</a>
+
+				</div>
+				<a href="projects.html"
+					 class="button dark animated">See all projects</a>
+			</div>
+		</section>
+
+		<div class="bg-color-wrapper">
+			<section class="section about-me"
+							 id="aboutme">
+				<div class="width-wrapper">
+					<h2 class="section-title">About me</h2>
+					<div class="about-me-content">
+						<img class="portrait"
+								 src="content/images/Untitled.png"
+								 alt="Photo." />
+						<p>
+							Hey there, my name is Mihaly Ale, diving headfirst into the
+							world of web development! Don't have the fancy job titles yet
+							,but I've got a decent handle on HTML, CSS, and I'm I'm getting
+							the hang of JavaScript. Fluent in English, Hungarian by birth,
+							and I can hold my own in Spanish - lived it up in London for a
+							solid seven years. Jumping ship from the hospitality gig to code
+							life. I've got a spot for sci-fi, and kettlebell, and I used to
+							run the show as a cinema projector whiz. I'm all about diving
+							into new stuff, so hit me up if you've got something exciting in
+							mind for a self-taught developer like me!
+						</p>
+						<div class="blockquote-container">
+							<blockquote>
+								Don't just teach your children to read… Teach them to question
+								what they read. Teach them to question everything.
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="section contact-form">
+				<div class="width-wrapper">
+					<form class="contact-form"
+								action="https://formsubmit.co/jyymz0t2z@mozmail.com"
+								method="POST"
+								id="contact">
+						<div class="flex-container">
+							<div class="formgroup">
+								<input class="input"
+											 type="text"
+											 id="name"
+											 name="name"
+											 placeholder="Your Name"
+											 autocomplete="off"
+											 maxlength="20"
+											 required/>
+								<label class="input-label"
+											 for="name">Name</label>
+							</div>
+							<div class="formgroup">
+								<input class="input"
+											 type="email"
+											 id="email"
+											 name="email"
+											 placeholder="Your Email"
+											 autocomplete="off"
+											 required />
+								<label class="input-label"
+											 for="email">Email</label>
+							</div>
+							<div class="formgroup">
+								<textarea class="input"
+													id="message"
+													name="email"
+													placeholder="Your Message"
+													required="required"
+													autocomplete="off"></textarea>
+								<label class="textarea-label"
+											 for="message">Message</label>
+							</div>
+							<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+							<button type="submit"
+											name="submit"
+											class="button dark submit-button">
+								Send
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="width-wrapper">
+			<a href="#home">
+				<img class="sitelogo"
+						 src="content/logo/sitelogo-light-bg.svg"
+						 alt="Site logo." />
+			</a>
+			<hr />
+			<div class="flex-container">
+				<a href="https://www.linkedin.com/in/mihaly-ale/"
+					 class="social-link"
+					 title="Visit my LinkedIn profile."
+					 target="_blank">
+					<svg fill="#000000"
+							 version="1.1"
+							 id="Layer_1"
+							 xmlns="http://www.w3.org/2000/svg"
+							 xmlns:xlink="http://www.w3.org/1999/xlink"
+							 viewBox="-271 283.9 256 235.1"
+							 xml:space="preserve"
+							 width="64px"
+							 height="64px">
+
+						<g id="SVGRepo_bgCarrier"
+							 stroke-width="0" />
+
+						<g id="SVGRepo_tracerCarrier"
+							 stroke-linecap="round"
+							 stroke-linejoin="round" />
+
+						<g id="SVGRepo_iconCarrier">
+							<g>
+								<rect x="-264.4"
+											y="359.3"
+											width="49.9"
+											height="159.7" />
+								<path
+											d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z" />
+								<path
+											d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z" />
+							</g>
+						</g>
+
+					</svg>
+				</a>
+				<a href="https://www.github.com/mihaly-ale"
+					 class="social-link"
+					 title="Visit my Github profile."
+					 target="_blank">
+					<svg fill="#000000"
+							 width="64px"
+							 height="64px"
+							 viewBox="0 0 1920 1920"
+							 xmlns="http://www.w3.org/2000/svg">
+
+						<g id="SVGRepo_bgCarrier"
+							 stroke-width="0" />
+
+						<g id="SVGRepo_tracerCarrier"
+							 stroke-linecap="round"
+							 stroke-linejoin="round" />
+
+						<g id="SVGRepo_iconCarrier">
+							<path d="M1821.63 637.76c0-130.027-43.627-236.373-116.054-319.68 11.627-30.187 50.347-151.36-11.2-315.307 0 0-94.72-32-310.4 122.134-90.133-26.454-186.773-39.68-282.773-40.107-96 .427-192.64 13.653-282.667 40.107C602.749-29.227 507.923 2.773 507.923 2.773c-61.547 163.947-22.72 285.12-11.094 315.307-72.32 83.307-116.266 189.653-116.266 319.68 0 456.533 263.68 558.72 514.453 588.8 0 0-180.267 111.68-180.267 299.413-64.32 30.507-336.533 123.947-437.333-58.133 0 0-59.627-114.347-173.013-122.773 0 0-110.294-1.494-7.787 72.426 0 0 74.027 36.694 125.44 174.294 0 0 57.173 289.92 489.067 159.68 4.373 2.24 1.6 140.266 1.6 168.533h777.173s1.28-277.013 1.28-365.12c0-216.64-144.64-292.48-185.28-329.28 251.627-29.44 515.733-130.133 515.733-587.84"
+										fill-rule="evenodd" />
+						</g>
+
+					</svg>
+				</a>
+				<a href="https://www.credly.com/users/mihaly-ale"
+					 class="social-link"
+					 title="Check out my Credly badges."
+					 target="_blank">
+					<svg width="64px"
+							 height="64px"
+							 viewBox="0 0 1024 1024"
+							 xmlns="http://www.w3.org/2000/svg"
+							 fill="#000000">
+
+						<g id="SVGRepo_bgCarrier"
+							 stroke-width="0" />
+
+						<g id="SVGRepo_tracerCarrier"
+							 stroke-linecap="round"
+							 stroke-linejoin="round"
+							 stroke="#ffCCCCCC"
+							 stroke-width="77.824" />
+
+						<g id="SVGRepo_iconCarrier">
+							<circle cx="512"
+											cy="512"
+											r="512" />
+							<path d="M671.2 371.6h3c3.7.3 7.4 2.1 9.7 5 3.4 4.2 4.3 9.8 4.6 15.1.8 16.1-2.7 32.1-7.3 47.5-5.9 20.4-14.2 40-21 60.1-1.2 3.5-2.4 7.1-3.3 10.7-1.5 6-1.3 12.3-1.5 18.5-.2 5.8.2 11.6 1.3 17.3.6 3.1 1.9 6.4 4.3 8.6 2.2 2 5.4 2.9 8.3 2 3.9-1.2 7-4.2 9.8-7.1 3.9-4.3 7.6-8.7 10.3-13.8 3.8-6.8 6-14.3 7.1-22 1.5-11.6 2.7-23.4 6.9-34.4 1.6-4.2 3.6-8.5 7.4-11.1 5.1-3.6 12.8-2.1 16.7 2.7 1.9 2.4 2.4 5.5 2.4 8.4-.2 3.9-1 7.8-2.3 11.5-4.5 13.2-7.1 27.1-6.6 41.1.1 3.2.4 6.6 2.1 9.5 1.4 2.4 3.8 4.3 6.6 4.3 3.2 0 6-1.9 8-4.2 3.1-3.5 5.6-7.5 7.6-11.7 4-8.5 5.9-17.8 7.6-27 1.4-7.8 2.8-15.6 5-23.2 1.2-3.9 2.7-7.8 5.6-10.8 1.9-2.1 4.8-2.9 7.5-2.9 2.8.1 5.4 1.7 7.3 3.8 2.6 2.9 3.1 6.9 2.8 10.6-2.8 22.1-5.9 44.2-8.4 66.3-1.8 13.8-3.4 27.6-4.6 41.4-.1 1.5 1.7 2.4 2.7 1.4 7.2-6.9 14.3-14.1 19.7-22.5 2.5-3.8 4.3-7.9 6.7-11.7 1-1.7 2.2-3.4 4.1-4 2.9-1.4 6.6-1 9.1 1 1.9 1.4 2.9 3.7 3.2 6v2.7c-.6 4.6-3.3 8.5-5.3 12.5-5.5 11-13.1 21-22.6 28.9-6.8 5.8-14.8 10.2-23.2 13.2-.5.2-1.3.3-1.4 1-3.1 12.7-10 24.4-19.3 33.5-10.3 10.2-23.6 17.2-37.7 20.5-7.7 1.7-15.8 2.4-23.6 1-8-1.5-15.8-5.2-21.5-11-5.2-5.2-8.7-12.1-9.3-19.5-.6-6.7 1.1-13.5 4.3-19.4 3.7-6.7 9.3-12.3 15.9-16.2 6.3-3.8 13.5-5.6 20.6-6.5 8.1-.9 16.4-.9 24.6-.2 5.1.4 10.2.9 15.3 1.3 2.8.2 5.9 1.2 8.6-.2 1.9-.9 2.5-3.2 2.8-5.1 1.2-9 3-18.1 1.9-27.3-.2-1.2-.5-3-2-3.1-1.8.8-2.7 2.7-3.7 4.3-3.1 6-8.9 10.6-15.6 11.9-6.7 1.3-14-2.1-17.1-8.1-1.5-2.5-2.2-5.5-4.4-7.6-1.5-1.4-3.7-1.4-5.5-.6-3.2 1.4-5.3 4.3-7.9 6.5-6.8 6.1-15.4 10.7-24.7 11.2-10.8.7-21.9-5.4-26.4-15.4-.6-1.4-1.1-3.4-2.9-3.6-2-.3-3.5 1.3-4.6 2.7-5.3 6.7-10.3 13.9-17.3 18.9-4.5 3.2-9.9 5.4-15.5 5.3-5.9-.1-11.8-3.3-14.6-8.5-1.3-2.3-1.8-5.2-3.9-7-1.6-1.4-4.1-1.2-5.8-.1-2.6 1.5-4.1 4.2-6.2 6.3-5.8 5.8-14.2 8.7-22.3 7.9-9.8-1-18.7-7.8-22.3-17-.5-1.3-1.2-2.8-2.6-3.2-1.1-.4-2 .4-2.7 1.1-5.4 5-10.8 10.1-17.3 13.6-6.6 3.5-13.9 5.8-21.4 5.6-7.9.1-15.8-2.3-22.2-6.8-5.4-3.7-9.7-8.9-12.2-15-.7-1.6-1.6-3.4-3.4-3.8-1.6-.4-3 .8-3.9 2-2.7 3.8-6.2 7.1-10.1 9.6-6 3.9-13 6.6-20.3 6.6-5.6 0-11.2-2.1-15.2-6-4.3-4.2-6.6-10.1-7.5-16-1.1-7.7.5-15.5 2.7-22.8 1.4-4.8 3.2-9.4 4.3-14.3.6-2.5.8-5.2-.3-7.5-.9-1.8-2.8-2.9-4.6-3.7-2-.8-4.1.3-5.5 1.6-1.4 1.3-2.1 3-2.9 4.7-4.9 11.8-11.5 22.9-19.6 32.8-7.8 9.6-17.1 17.9-27.1 25.2-11.4 8.1-24.5 14-38.4 15.9-10.1 1.4-20.6.6-30.4-2.3-5.8-1.7-11.5-4.1-16.5-7.6-8.6-6-15.5-14.3-20.4-23.5-3.8-7.1-6.7-14.7-8.8-22.5-2.9-11.1-3.9-22.5-4.4-33.9v-7.8c.2-8.4 1-16.8 2.7-25 3-14.9 8.4-29.2 15.7-42.5 5.8-10.4 12.7-20.2 21.4-28.3 9.5-8.9 21-15.8 33.7-18.6 12.1-2.7 25.1-2 36.4 3.2 3.4 1.5 6.4 3.7 10 4.8 2.5.8 5.4.5 7.5-1.1 3.2-2.5 4.7-6.5 7.4-9.5 3.4-3.7 8.9-5.2 13.7-3.8 4.5 1.3 8 5.2 9.1 9.7.7 3 .3 6.1-.6 9-1.4 4.1-3.7 7.8-5.9 11.5-7.3 12.6-12.8 26.2-16.3 40.3-1.1 4.3-2 8.8-3.7 12.9-1.6 3.9-4.1 7.6-7.7 10-3.1 2.1-7.2 3.1-10.9 2-3.4-1-6-3.8-7.4-7-1.6-3.4-2.1-7.3-1.6-11.1 1-8.9 5.9-17 6.1-26.1.2-5.1-1.5-10.4-5.5-13.7-5.6-4.8-13.5-6.1-20.6-5.1-8.4 1.1-16.3 5.1-22.5 10.8-6.7 6.2-11.7 14-15.7 22.1-11.6 23.2-16.7 49.8-13.7 75.6 1 8.4 3 16.8 7 24.4 2.5 4.8 5.8 9.1 9.9 12.5 5.3 4.4 11.7 7.4 18.5 8.7 9.7 1.9 19.9.6 29-2.9 12.2-4.7 22.8-13.1 31.2-23 4.5-5.1 8.4-10.7 12.2-16.4 3.8-5.3 7.8-10.9 9.3-17.4 1-4.3.1-8.7-.9-12.9-.7-5.8 1.5-11.7 5.3-16 2.4-2.5 5.4-4.8 8.9-5.5 3.3-.6 7 0 9.8 2.1 3.1 2.2 4.7 6.4 3.6 10.1-.7 2.4-1.5 4.9-.8 7.4.7 2.1 2.8 3.4 4.9 3.5 4.8.4 9.8-.5 14.4 1.1 5.4 2.1 10.2 6.4 12 12.1 1.2 3.8 1.6 8.1.4 11.9-2.1 7.4-4.7 14.7-6.1 22.3-.4 2.5-.8 5.1-.1 7.6.4 1.8 2 3.4 3.9 3.5 3.3.3 6.3-1.5 8.6-3.7 4.7-4.7 7.8-10.7 10-16.9 2.7-7.5 4.1-15.4 6.1-23.1 2.1-7.9 5.3-15.6 10.3-22.1 7.4-9.8 19.4-16.1 31.8-15.8 6.9.1 13.7 2.8 18.6 7.8 4.1 4.2 6.3 9.9 7.2 15.7 1.5 9.8-.3 20.1-4.8 29-6.2 12.2-18.9 20.9-32.6 22-2 .2-4.3.1-5.8 1.6-1.3 1.3-1.2 3.3-1 5 .5 4.6 2 9.3 5.1 12.9 3.6 3.7 9 6.3 14.3 5.1 6.1-1.3 11.3-5.2 15.6-9.4 4.1-4.1 7.7-8.7 11-13.5 4.6-6.6 7.4-14.2 10.2-21.6 2.7-7.3 5.2-14.7 9.7-21.1 3.6-5.4 8.3-10.1 13.9-13.5 6.2-3.9 13.6-5.9 21-5.5 2.3.1 4.9.2 6.8-1.2 1.7-1.3 2.3-3.6 2.3-5.7 0-3.8.4-7.5.7-11.3.5-5.9 1-11.8 1.8-17.6 1.7-14.6 4.7-29 8.6-43.1 2-7.1 4.6-14.3 9.1-20.3 1.9-2.7 4.2-5.3 7.2-6.9 2.9-1.7 6.6-1.6 9.7-.7 4 1.2 6.6 5 8.2 8.6 2.9 7.1 2.1 15 1.5 22.5-.8 11.8-3.6 23.4-6 35-2.1 10.2-3.8 20.5-5.7 30.7-2.6 14-5.1 28.1-7.7 42.1-2.2 11.5-4.7 23.2-3.3 35 .4 3.1.8 6.5 2.9 8.9 1.5 1.7 4 2.1 6 1.4 2.7-.9 4.6-3.3 6-5.7 3.3-5.6 6.2-11.5 9.1-17.4 4.2-8.2 8.4-16.7 9.8-25.9 2.2-14 3.7-28.2 5.7-42.3 1.6-10.5 3.4-21 5.1-31.4 2.1-13.1 4.5-26.1 8.2-38.8 1.8-6 4.2-11.9 8.4-16.6 3.8-3.8 8.3-6.5 13.3-7zM478 487.8c-2 .6-3.6 2.2-4.9 3.8-2.9 3.7-5.1 7.9-6.6 12.4-1.6 4.8-3.1 9.8-2.5 14.8.1 1.5 1.6 2.6 3 2.6 2.7.1 5.1-1.4 7.2-3 4.7-3.3 7.7-8.4 9.8-13.6 1.3-3.3 2.2-6.9 1.9-10.5-.2-2.4-1.4-4.9-3.5-6.1-1.3-.8-3-.9-4.4-.4zm85.7 11.2c-5.6 1-10.6 4.3-14.2 8.7-3.9 4.7-6.6 10.4-8 16.4-2.1 8.5-2.3 17.5 0 26 .7 2.6 1.9 5.2 3.9 7.1 1.3 1.3 3.1 2 4.9 2.1 4.7.7 9.1-1.9 12.7-4.6 4.5-3.3 7.4-8.2 9.2-13.4 1.1-3.2.4-6.6.1-9.9-.5-6.7-.5-13.4-.1-20.1.1-2.3.8-4.5.8-6.8 0-1.8-.7-3.8-2.4-4.8-2.1-1.3-4.6-1.1-6.9-.7zm133.7 119.6c-4.8.3-9.6 1.3-14.1 3.2-4.9 2-9.1 5.7-11.2 10.5-1.4 3-2 6.6-.5 9.6 1.5 3.1 4.3 5.4 7.4 6.8 4.3 1.9 9.1 2.2 13.6 1.7 14.2-1.6 27.7-8.9 36.7-20 1.8-2.2 3.2-4.7 4.7-7.1.4-.8 1-2.1.1-2.8-1.1-.8-2.5-.5-3.7-.5-5.1-.3-10.2-.8-15.3-1-5.9-.3-11.8-.8-17.7-.4z"
+										style="fill:#fff" />
+						</g>
+
+					</svg>
+				</a>
+				<a href="https://codepen.io/mihaly-ale"
+					 class="social-link"
+					 title="Visit my Codepen profile."
+					 target="_blank">
+					<svg fill="#000000"
+							 width="64px"
+							 height="64px"
+							 viewBox="0 0 24 24"
+							 xmlns="http://www.w3.org/2000/svg">
+
+						<g id="SVGRepo_bgCarrier"
+							 stroke-width="0" />
+
+						<g id="SVGRepo_tracerCarrier"
+							 stroke-linecap="round"
+							 stroke-linejoin="round" />
+
+						<g id="SVGRepo_iconCarrier">
+
+							<path
+										d="m2.893 15.656 8.076 5.384v-4.808l-4.474-2.986zm-.831-1.928 2.585-1.728-2.585-1.728zm10.969 7.312 8.076-5.384-3.6-2.41-4.476 2.986zm-1.031-6.602 3.643-2.438-3.643-2.438-3.643 2.438zm-5.505-3.68 4.474-2.99v-4.808l-8.076 5.384zm12.858 1.242 2.585 1.728v-3.456zm-1.848-1.246 3.6-2.41-8.074-5.384v4.808zm6.495-2.41v7.312.03c0 .346-.18.651-.452.825l-.004.002-10.969 7.313c-.162.109-.361.174-.576.174s-.414-.065-.58-.176l.004.002-10.969-7.312c-.276-.176-.456-.481-.456-.827 0-.011 0-.021.001-.032v.002-7.312c0-.009 0-.02 0-.031 0-.346.18-.651.452-.825l.004-.002 10.969-7.312c.162-.109.361-.174.576-.174s.414.065.58.176l-.004-.002 10.969 7.312c.276.176.456.481.456.827 0 .011 0 .021-.001.032z" />
+
+						</g>
+
+					</svg>
+				</a>
+			</div>
+
+			<p class="copyright">&copy; Mihaly Ale, 2024</p>
+			<p class="attribution">Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a></p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+@mixin flexBox($direction, $justify-content, $align-items, $flex-wrap: nowrap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+}
+
+@mixin bgColor(
+	$default-color,
+	$first-gradient,
+	$second-gradient,
+	$deg: 120deg
+) {
+	background-color: $default-color;
+	background: linear-gradient($deg, $first-gradient, $second-gradient);
+}
+
+.width-wrapper {
+	max-inline-size: 1100px;
+	margin-inline: auto;
+	margin-block: 0;
+}

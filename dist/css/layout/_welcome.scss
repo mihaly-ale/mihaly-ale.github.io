@@ -1,0 +1,53 @@
+.cta {
+	// @include flexBox(row, space-around, center, wrap);
+	block-size: 13rem;
+	@include flexBox(row, space-around, center, wrap);
+
+	@media screen and (max-width: 395px) {
+		justify-content: space-between;
+		gap: 3rem;
+	}
+
+	@media screen and (max-width: 475px) {
+		justify-content: space-between;
+	}
+
+	@media screen and (min-width: 475px) {
+		max-inline-size: 85%;
+	}
+	@media screen and (min-width: 580px) {
+		max-inline-size: 70%;
+	}
+	@media screen and (min-width: 850px) {
+		max-inline-size: 50%;
+	}
+}
+
+.cta-btn_icon {
+	block-size: 2rem;
+}
+
+.page-title {
+	margin-block-end: 0;
+	line-height: 1;
+}
+
+.page-subtitle {
+	margin-block-start: 1.25rem;
+	margin-block-end: 4rem;
+}
+
+.welcome {
+	position: relative;
+}
+
+.hero-image {
+	opacity: 0.3;
+	position: absolute;
+	inset-inline-end: 3rem;
+	inset-block-end: 3rem;
+
+	@media screen and (min-width: 900px) {
+		scale: 1.3;
+	}
+}

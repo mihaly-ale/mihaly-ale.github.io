@@ -1,0 +1,88 @@
+:root {
+	font-size: 18px;
+
+	@media screen and (min-width: 650px) {
+		font-size: 20px;
+	}
+	line-height: 1.45;
+}
+
+body {
+	font-family: $para-font;
+	font-weight: $fw-500;
+}
+
+.navbar-list {
+	list-style-type: none;
+}
+
+.navbar-link {
+	font-size: $fs-100;
+	color: $color-white;
+}
+
+.page-title {
+	font-family: $title-font;
+	font-size: $fs-350;
+	color: $color-white;
+
+	@media screen and (max-width: 600px) {
+		font-size: $fs-250;
+	}
+
+	& span {
+		color: $accent-color-cyan;
+	}
+}
+
+.page-title.spacing {
+	margin-block-end: $gap-400;
+}
+
+.page-title.darken {
+	color: $color-darkblue;
+}
+
+.page-subtitle {
+	color: $accent-color-cyan;
+	font-size: $fs-200;
+}
+
+p {
+	font-size: $fs-100;
+}
+
+.button {
+	font-family: $para-font;
+	font-size: $fs-100;
+	color: $color-white;
+}
+
+.section-title {
+	font-family: $title-font;
+	font-size: $fs-250;
+}
+
+a {
+	text-decoration: none;
+	color: $accent-color-cyan;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+// about.html
+// highlight skills
+h2 + p {
+	color: $accent-color-cyan;
+}
+
+a:not(.button):not(.navbar-link):visited {
+	color: $color-lightblue;
+}
+
+// smiley
+.flex-child p:nth-of-type(2) {
+	font-size: $fs-250;
+}

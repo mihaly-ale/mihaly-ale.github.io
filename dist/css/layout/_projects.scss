@@ -1,0 +1,52 @@
+.projects_grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: $gap-200;
+	margin-block-end: $gap-200;
+}
+
+.project-tile {
+	display: grid;
+	aspect-ratio: 1 / 1.1;
+	align-content: stretch;
+	position: relative;
+}
+
+.project-tile::after {
+	content: '';
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	inline-size: 100%;
+	block-size: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	transform: scaleX(0);
+}
+
+.project-tile:hover::after {
+	transform: scaleX(1);
+}
+
+.project-tile > * {
+	grid-column: 1 /2;
+	grid-row: 1/ 2;
+}
+
+.project-tile_title {
+	font-size: $fs-100;
+	font-weight: $fw-500;
+	color: $color-darkblue;
+	align-self: end;
+	text-align: center;
+	margin: $gap-50;
+	padding: $gap-50;
+	box-shadow: 0 0.25rem 0.25rem $accent-color-cyan;
+	background: white;
+	z-index: 1;
+}
+
+.project-tile_thumbnail {
+	inline-size: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}

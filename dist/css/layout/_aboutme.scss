@@ -1,0 +1,82 @@
+.about-me {
+	color: $color-white;
+	line-height: 2.25;
+}
+
+.portrait {
+	inline-size: 250px;
+	float: inline-start;
+	background-color: $color-white;
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
+	shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
+	margin-inline: $gap-100;
+}
+
+// .blockquote-container {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+blockquote {
+	position: relative;
+	letter-spacing: 2px;
+	quotes: '\201C''\201D''\2018''\2019';
+	margin-block: $gap-500 0;
+	margin-inline: auto;
+	width: 100%;
+	padding: 25px 25px;
+}
+
+blockquote::before,
+blockquote::after {
+	position: absolute;
+	font-size: 5em;
+	color: $color-lightblue;
+	opacity: 0.5;
+}
+
+blockquote::before {
+	content: open-quote;
+	inline-size: 1px;
+	block-size: 1px;
+	inset-block-start: -68px;
+	inset-inline-start: -10px;
+}
+blockquote::after {
+	content: close-quote;
+	inline-size: 39px;
+	block-size: 101px;
+	inset-block-end: 0px;
+	inset-inline-end: 0px;
+}
+
+// about.html
+.story .button_flex-container {
+	@include flexBox(row, space-around, stretch, wrap);
+	margin-block-start: $gap-500;
+	margin-block-end: $gap-200;
+	margin-inline: auto;
+}
+.flex-child * {
+	margin: 0;
+}
+
+.flex-child {
+	@include flexBox(column, space-between, center);
+	text-align: center;
+
+	background-color: hsla(213.9, 61.5%, 46.9%, 0.18);
+	box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
+	border-radius: 5px;
+	padding: 0.5em;
+
+	flex-basis: 30%;
+	block-size: 375px;
+	max-inline-size: 250px;
+	margin-block-end: $gap-200;
+}
+
+.flex-child p:nth-of-type(2) {
+	flex-shrink: 1;
+}

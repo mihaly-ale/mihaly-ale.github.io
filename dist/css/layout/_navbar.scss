@@ -1,0 +1,54 @@
+.navbar {
+	@include flexBox(row, space-between, center);
+
+	block-size: 4rem;
+}
+
+.navbar-list {
+	@include flexBox(row, space-between, center);
+
+	gap: $gap-100;
+
+	@media screen and (min-width: 600px) {
+		gap: $gap-200;
+	}
+}
+
+.sitelogo {
+	block-size: 1rem;
+
+	@media screen and (min-width: 600px) {
+		block-size: 1.25rem;
+	}
+}
+
+.navbar-link {
+	position: relative;
+	border-block-end: 4px solid transparent;
+}
+
+.navbar-link::before {
+	content: '';
+	inline-size: 100%;
+	block-size: 3px;
+	position: absolute;
+	inset-block-start: 1.25rem;
+	background-color: $color-lightblue;
+	scale: 0;
+	transition: scale 250ms ease-in-out 50ms;
+	transform-origin: right;
+}
+
+.navbar-link:hover::before {
+	transform-origin: left;
+	scale: 1;
+}
+
+.navbar-link:focus {
+	outline: 2px double $accent-color-lightblue;
+	outline-offset: 4px;
+}
+
+.active {
+	border-block-end: 2px solid $accent-color-yellow;
+}

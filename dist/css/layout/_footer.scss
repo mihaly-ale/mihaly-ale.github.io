@@ -1,0 +1,61 @@
+.footer .flex-container {
+	@include flexBox(row, center, center, wrap);
+
+	gap: $gap-200;
+	margin-block: $gap-300;
+}
+
+// footer icons
+.footer svg {
+	inline-size: 40px;
+	block-size: auto;
+}
+
+.social-link svg:hover {
+	fill: $accent-color-yellow;
+}
+
+hr {
+	border: 0;
+	block-size: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.lighten-hr {
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.75),
+		rgba(255, 255, 255, 0)
+	);
+}
+
+.footer .sitelogo {
+	text-align: center;
+	margin-block: $gap-300;
+	margin-inline: auto;
+}
+
+.copyright {
+	text-align: end;
+}
+
+.attribution {
+	margin-block-end: 0;
+	margin-block-start: 2rem;
+	font-size: $fs-85;
+}
+
+// dark footer
+.footer-dark p {
+	color: $color-white;
+}
+
+.white-svg {
+	fill: $color-white;
+}

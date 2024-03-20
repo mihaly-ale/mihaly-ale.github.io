@@ -1,0 +1,41 @@
+body {
+	background-color: $color-white;
+}
+
+.bg-color-wrapper {
+	@include bgColor($color-darkblue, $color-darkblue, $color-blue);
+}
+
+.section,
+.footer {
+	padding-block: $gap-300;
+	padding-inline: 0.5rem;
+}
+
+.section {
+	padding-block-end: $gap-500;
+}
+
+.navbar {
+	padding-inline: 1rem;
+}
+
+.section-title {
+	margin-block-start: 0;
+}
+
+img {
+	max-inline-size: 100%;
+	display: block;
+}
+
+.flex-thanks {
+	@include flexBox(column, center, center);
+	gap: 15rem;
+	height: 100vb;
+}
+
+.email-ack {
+	color: $color-blue;
+	text-align: center;
+}
