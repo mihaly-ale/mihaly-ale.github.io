@@ -61,7 +61,7 @@
 }
 
 .cta-btn_contact:hover.cta-btn_contact::before {
-	transform: scale(1.2) skew(15deg) translateY(-5px);
+	transform: scale(1.1) skew(15deg) translateY(-5px);
 }
 
 .cta-btn_contact::after {
@@ -76,7 +76,7 @@
 }
 
 .cta-btn_contact:hover.cta-btn_contact::after {
-	transform: scale(1.2) translateY(-5px);
+	transform: scale(1.1) translateY(-5px);
 }
 
 // projects section show all link

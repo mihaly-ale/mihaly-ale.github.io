@@ -1,5 +1,4 @@
 .cta {
-	// @include flexBox(row, space-around, center, wrap);
 	block-size: 13rem;
 	@include flexBox(row, space-around, center, wrap);
 
@@ -20,6 +19,12 @@
 	}
 	@media screen and (min-width: 850px) {
 		max-inline-size: 50%;
+	}
+}
+
+.cta + .cta-btn {
+	@media screen and (max-width: 600px) {
+		margin-right: 1rem;
 	}
 }
 
