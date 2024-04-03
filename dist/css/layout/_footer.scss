@@ -36,12 +36,13 @@ hr {
 }
 
 .footer .sitelogo-container {
-	padding-block: $gap-300;
+	padding-block: $gap-700;
 }
 
 .footer .sitelogo {
 	text-align: center;
 	margin-inline: auto;
+	block-size: 2.5rem;
 }
 
 .copyright {
@@ -57,10 +58,10 @@ hr {
 }
 
 // dark footer
-.footer-dark p {
+.inverse-font-color p {
 	color: $color-white;
 }
 
-.white-svg {
+.white-icon {
 	fill: $color-white;
 }

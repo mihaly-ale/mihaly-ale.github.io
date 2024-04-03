@@ -688,7 +688,7 @@ blockquote::after {
   inset-inline-end: 0px;
 }
 
-.story .button_flex-container {
+.story .card_flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -835,12 +835,13 @@ hr {
 }
 
 .footer .sitelogo-container {
-  padding-block: 3rem;
+  padding-block: 7rem;
 }
 
 .footer .sitelogo {
   text-align: center;
   margin-inline: auto;
+  block-size: 2.5rem;
 }
 
 .copyright {
@@ -855,11 +856,11 @@ hr {
   font-size: 0.85rem;
 }
 
-.footer-dark p {
+.inverse-font-color p {
   color: hsl(0, 0%, 95%);
 }
 
-.white-svg {
+.white-icon {
   fill: hsl(0, 0%, 95%);
 }
 

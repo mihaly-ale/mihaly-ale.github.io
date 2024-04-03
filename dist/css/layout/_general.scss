@@ -24,6 +24,7 @@ img {
 	display: block;
 }
 
+// thanks.html
 .flex-thanks {
 	@include flexBox(column, center, center);
 	gap: 15rem;

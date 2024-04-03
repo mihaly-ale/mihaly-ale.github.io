@@ -12,12 +12,6 @@
 	margin-inline: $gap-100;
 }
 
-// .blockquote-container {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// }
-
 blockquote {
 	position: relative;
 	letter-spacing: 2px;
@@ -52,12 +46,13 @@ blockquote::after {
 }
 
 // about.html
-.story .button_flex-container {
+.story .card_flex-container {
 	@include flexBox(row, space-around, stretch, wrap);
 	margin-block-start: $gap-500;
 	margin-block-end: $gap-200;
 	margin-inline: auto;
 }
+
 .flex-child * {
 	margin: 0;
 }
