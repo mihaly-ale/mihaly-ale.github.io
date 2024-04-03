@@ -2,7 +2,7 @@
 	@include flexBox(row, center, center, wrap);
 
 	gap: $gap-200;
-	margin-block: $gap-300;
+	padding-block: $gap-300;
 }
 
 // footer icons
@@ -35,19 +35,24 @@ hr {
 	);
 }
 
+.footer .sitelogo-container {
+	padding-block: $gap-300;
+}
+
 .footer .sitelogo {
 	text-align: center;
-	margin-block: $gap-300;
 	margin-inline: auto;
 }
 
 .copyright {
 	text-align: end;
+	margin-inline-end: 2rem;
 }
 
 .attribution {
+	margin-inline-start: 2rem;
 	margin-block-end: 0;
-	margin-block-start: 2rem;
+	padding-block-end: 2rem;
 	font-size: $fs-85;
 }
 

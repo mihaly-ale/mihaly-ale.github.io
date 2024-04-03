@@ -1,6 +1,7 @@
 .navbar {
 	@include flexBox(row, space-between, center);
 
+	padding-inline: 1rem;
 	block-size: 4rem;
 }
 

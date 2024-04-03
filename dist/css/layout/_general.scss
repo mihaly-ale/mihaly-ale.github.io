@@ -6,18 +6,13 @@ body {
 	@include bgColor($color-darkblue, $color-darkblue, $color-blue);
 }
 
-.section,
-.footer {
-	padding-block: $gap-300;
-	padding-inline: 0.5rem;
-}
-
 .section {
-	padding-block-end: $gap-500;
+	padding-block-end: $gap-700;
+	padding-inline: 0.65rem;
 }
 
-.navbar {
-	padding-inline: 1rem;
+.section:not(.contact-form) {
+	padding-block-start: $gap-500;
 }
 
 .section-title {

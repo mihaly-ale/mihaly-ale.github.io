@@ -414,6 +414,7 @@ a:not(.button):not(.navbar-link):visited {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  padding-inline: 1rem;
   block-size: 4rem;
 }
 
@@ -480,18 +481,13 @@ body {
   background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(210, 67%, 27%));
 }
 
-.section,
-.footer {
-  padding-block: 3rem;
-  padding-inline: 0.5rem;
-}
-
 .section {
-  padding-block-end: 5rem;
+  padding-block-end: 7rem;
+  padding-inline: 0.65rem;
 }
 
-.navbar {
-  padding-inline: 1rem;
+.section:not(.contact-form) {
+  padding-block-start: 5rem;
 }
 
 .section-title {
@@ -519,7 +515,7 @@ img {
 }
 
 .cta {
-  block-size: 13rem;
+  block-size: 17rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -816,7 +812,7 @@ label {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-block: 3rem;
+  padding-block: 3rem;
 }
 
 .footer svg {
@@ -838,19 +834,24 @@ hr {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
+.footer .sitelogo-container {
+  padding-block: 3rem;
+}
+
 .footer .sitelogo {
   text-align: center;
-  margin-block: 3rem;
   margin-inline: auto;
 }
 
 .copyright {
   text-align: end;
+  margin-inline-end: 2rem;
 }
 
 .attribution {
+  margin-inline-start: 2rem;
   margin-block-end: 0;
-  margin-block-start: 2rem;
+  padding-block-end: 2rem;
   font-size: 0.85rem;
 }
 
