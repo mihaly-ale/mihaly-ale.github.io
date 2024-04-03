@@ -1,0 +1,25 @@
+.story .card_flex-container {
+	@include flexBox(row, space-around, stretch, wrap);
+	gap: 2rem;
+
+	margin-block-start: $gap-500;
+}
+
+.card {
+	@include flexBox(column, space-around, center);
+
+	@include bgColor($color-blue, $color-darkblue, $accent-color-cyan);
+	box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
+	block-size: 375px;
+	max-inline-size: 300px;
+	border-radius: 5px;
+	padding: 2em;
+}
+
+.card-button {
+	text-align: center;
+}
+
+.card-button p {
+	block-size: 2rem;
+}

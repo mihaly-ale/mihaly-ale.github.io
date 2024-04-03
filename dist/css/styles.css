@@ -397,14 +397,23 @@ blockquote {
 }
 
 h2 + p {
-  color: hsl(172, 60%, 63%);
+  color: hsl(46, 98%, 51%);
+  background-color: hsl(210, 67%, 27%);
+  padding: 0.5em;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
 }
 
 a:not(.button):not(.navbar-link):visited {
   color: hsl(210, 55%, 64%);
 }
 
-.flex-child p:nth-of-type(2) {
+.card-text {
+  color: hsl(0, 0%, 95%);
+}
+
+.card-button p:nth-of-type(1) {
   font-size: 2.5rem;
 }
 
@@ -639,7 +648,7 @@ img {
      object-fit: cover;
 }
 
-.about-me {
+.about-me-intro {
   color: hsl(0, 0%, 95%);
   line-height: 2.25;
 }
@@ -686,42 +695,6 @@ blockquote::after {
   block-size: 101px;
   inset-block-end: 0px;
   inset-inline-end: 0px;
-}
-
-.story .card_flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-wrap: wrap;
-  margin-block-start: 5rem;
-  margin-block-end: 2rem;
-  margin-inline: auto;
-}
-
-.flex-child * {
-  margin: 0;
-}
-
-.flex-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  background-color: hsla(213.9, 61.5%, 46.9%, 0.18);
-  box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
-  border-radius: 5px;
-  padding: 0.5em;
-  flex-basis: 30%;
-  block-size: 375px;
-  max-inline-size: 250px;
-  margin-block-end: 2rem;
-}
-
-.flex-child p:nth-of-type(2) {
-  flex-shrink: 1;
 }
 
 .contact-form .flex-container {
@@ -862,6 +835,39 @@ hr {
 
 .white-icon {
   fill: hsl(0, 0%, 95%);
+}
+
+.story .card_flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-block-start: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: hsl(210, 67%, 27%);
+  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(172, 60%, 63%));
+  box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
+  block-size: 375px;
+  max-inline-size: 300px;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+.card-button {
+  text-align: center;
+}
+
+.card-button p {
+  block-size: 2rem;
 }
 
 .button {

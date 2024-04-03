@@ -1,4 +1,4 @@
-.about-me {
+.about-me-intro {
 	color: $color-white;
 	line-height: 2.25;
 }
@@ -43,35 +43,4 @@ blockquote::after {
 	block-size: 101px;
 	inset-block-end: 0px;
 	inset-inline-end: 0px;
-}
-
-// about.html
-.story .card_flex-container {
-	@include flexBox(row, space-around, stretch, wrap);
-	margin-block-start: $gap-500;
-	margin-block-end: $gap-200;
-	margin-inline: auto;
-}
-
-.flex-child * {
-	margin: 0;
-}
-
-.flex-child {
-	@include flexBox(column, space-between, center);
-	text-align: center;
-
-	background-color: hsla(213.9, 61.5%, 46.9%, 0.18);
-	box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
-	border-radius: 5px;
-	padding: 0.5em;
-
-	flex-basis: 30%;
-	block-size: 375px;
-	max-inline-size: 250px;
-	margin-block-end: $gap-200;
-}
-
-.flex-child p:nth-of-type(2) {
-	flex-shrink: 1;
 }
