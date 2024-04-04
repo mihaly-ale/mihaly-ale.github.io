@@ -1013,7 +1013,7 @@ hr {
 
 .animated:hover::after {
   opacity: 1;
-  inset-inline-end: 25px;
+  inset-inline-end: 17px;
 }
 
 .submit-button {
