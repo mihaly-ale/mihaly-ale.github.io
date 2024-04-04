@@ -346,8 +346,8 @@ body {
 }
 
 .page-title {
-  font-family: Tourney, sans-serif;
-  font-size: 3.5rem;
+  font-family: Alkatra, sans-serif;
+  font-size: 4rem;
   color: hsl(0, 0%, 95%);
 }
 @media screen and (max-width: 600px) {
@@ -360,6 +360,7 @@ body {
 }
 
 .page-title.spacing {
+  margin-block-start: 0.5rem;
   margin-block-end: 4rem;
 }
 
@@ -372,8 +373,15 @@ body {
   font-size: 2rem;
 }
 
+.project-tile_title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(210, 29%, 11%);
+}
+
 p {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .button {
@@ -383,7 +391,7 @@ p {
 }
 
 .section-title {
-  font-family: Tourney, sans-serif;
+  font-family: Alkatra, sans-serif;
   font-size: 2.5rem;
 }
 
@@ -608,19 +616,29 @@ img {
   position: relative;
 }
 
-.project-tile::after {
-  content: "";
+.overlay {
   position: absolute;
+  background: linear-gradient(hsl(210, 34%, 80%), hsla(210, 62%, 52%, 0.7));
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: scaleX(0);
+  color: hsl(210, 67%, 27%);
+  font-weight: 500;
+  font-size: 1rem;
+  font-feature-settings: "lnum";
+  transform: scale(0) translateX(0%);
+  transform-origin: top right;
+  transition: transform 650ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  padding: 0.5em;
 }
 
-.project-tile:hover::after {
-  transform: scaleX(1);
+.overlay ul {
+  margin-block-start: 0.25em;
+}
+
+.project-tile:hover .overlay {
+  transform: scale(1);
 }
 
 .project-tile > * {
@@ -629,9 +647,6 @@ img {
 }
 
 .project-tile_title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: hsl(210, 29%, 11%);
   align-self: end;
   text-align: center;
   margin: 0.5rem;

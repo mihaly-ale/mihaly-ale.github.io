@@ -23,7 +23,7 @@ body {
 
 .page-title {
 	font-family: $title-font;
-	font-size: $fs-350;
+	font-size: $fs-400;
 	color: $color-white;
 
 	@media screen and (max-width: 600px) {
@@ -37,6 +37,7 @@ body {
 
 // gap for secondary pages h1
 .page-title.spacing {
+	margin-block-start: $gap-50;
 	margin-block-end: $gap-400;
 }
 
@@ -49,8 +50,15 @@ body {
 	font-size: $fs-200;
 }
 
+.project-tile_title {
+	font-size: $fs-125;
+	font-weight: $fw-700;
+	color: $color-darkblue;
+}
+
 p {
 	font-size: $fs-100;
+	font-weight: 600;
 }
 
 .button {
