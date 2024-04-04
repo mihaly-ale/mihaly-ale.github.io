@@ -1,0 +1,10 @@
+#Ignore
+
+dist/
+*.txt
+README.md
+
+
+#Exemption
+!styles.css
+
