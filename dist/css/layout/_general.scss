@@ -1,5 +1,6 @@
 body {
 	background-color: $color-white;
+	overflow-x: hidden;
 }
 
 .bg-color-wrapper {
@@ -27,7 +28,7 @@ img {
 // thanks.html
 .flex-thanks {
 	@include flexBox(column, center, center);
-	gap: 15rem;
+	gap: 6rem;
 	height: 100vb;
 }
 

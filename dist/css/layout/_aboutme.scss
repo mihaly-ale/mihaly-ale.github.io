@@ -3,13 +3,22 @@
 	line-height: 2.25;
 }
 
+.about-me-content {
+	@media screen and (max-width: 450px) {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
 .portrait {
 	inline-size: 250px;
 	float: inline-start;
 	background-color: $color-white;
 	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
 	shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
-	margin-inline: $gap-100;
+	margin-inline-end: $gap-100;
+	align-self: center;
 }
 
 blockquote {

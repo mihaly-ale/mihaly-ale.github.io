@@ -450,12 +450,7 @@ a:not(.button):not(.navbar-link):visited {
 }
 
 .sitelogo {
-  block-size: 1rem;
-}
-@media screen and (min-width: 600px) {
-  .sitelogo {
-    block-size: 1.25rem;
-  }
+  block-size: 1.5rem;
 }
 
 .navbar-link {
@@ -491,6 +486,7 @@ a:not(.button):not(.navbar-link):visited {
 
 body {
   background-color: hsl(0, 0%, 95%);
+  overflow-x: hidden;
 }
 
 .bg-color-wrapper {
@@ -522,7 +518,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 15rem;
+  gap: 6rem;
   height: 100vb;
 }
 
@@ -668,6 +664,14 @@ img {
   line-height: 2.25;
 }
 
+@media screen and (max-width: 450px) {
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 .portrait {
   inline-size: 250px;
   float: inline-start;
@@ -675,7 +679,8 @@ img {
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
           clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
   shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
-  margin-inline: 1rem;
+  margin-inline-end: 1rem;
+  align-self: center;
 }
 
 blockquote {
@@ -744,7 +749,6 @@ textarea {
 label {
   position: absolute;
   color: hsl(210, 29%, 11%);
-  font-size: inherit;
   opacity: 1;
   transition: all 300ms ease-in-out;
 }
@@ -937,10 +941,10 @@ hr {
   content: "";
   inline-size: 100%;
   block-size: 1.5rem;
-  padding: 0.5em;
+  padding: 0.25em;
   position: absolute;
-  inset-block-start: -40px;
-  inset-inline-end: -120px;
+  inset-block-start: -29px;
+  inset-inline-end: -95px;
   background-color: hsl(0, 0%, 95%);
   border: 4px solid hsl(46, 98%, 51%);
   border-radius: 5px;
@@ -957,8 +961,8 @@ hr {
   inline-size: 100%;
   block-size: 1.5rem;
   position: absolute;
-  inset-block-start: -27px;
-  inset-inline-end: -120px;
+  inset-block-start: -20px;
+  inset-inline-end: -98px;
   color: hsl(210, 29%, 11%);
   transition: transform 450ms ease-in-out;
 }
@@ -972,6 +976,10 @@ hr {
   background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(210, 67%, 27%));
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   border: none;
+}
+
+.white-shadow {
+  box-shadow: 0 10px 20px -8px rgba(222, 217, 217, 0.7);
 }
 
 .dark-bg {
@@ -1015,8 +1023,11 @@ hr {
   border: 2px solid hsl(172, 60%, 63%);
 }
 .submit-button:hover {
-  color: hsl(0, 0%, 95%);
-  background: rgba(0, 0, 0, 0.7);
+  background: hsl(210, 67%, 27%);
+  transition: all 450ms;
+}
+.submit-button:hover .send-icon {
+  fill: white;
 }
 
 .flex-child a {
