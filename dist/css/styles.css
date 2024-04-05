@@ -365,7 +365,7 @@ body {
 }
 
 .page-title.darken {
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
 }
 
 .page-subtitle {
@@ -376,10 +376,11 @@ body {
 .project-tile_title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
 }
 
 p {
+  color: hsl(210, 72.1%, 16.9%);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -397,7 +398,6 @@ p {
 
 a {
   text-decoration: none;
-  color: hsl(172, 60%, 63%);
 }
 
 blockquote {
@@ -413,7 +413,17 @@ h2 + p {
   border-radius: 20px;
 }
 
-a:not(.button):not(.navbar-link):visited {
+.dark-theme {
+  color: hsl(46, 98%, 51%);
+}
+.dark-theme:visited {
+  color: hsl(210, 34%, 80%);
+}
+
+.light-theme {
+  color: hsl(210, 67%, 27%);
+}
+.light-theme:visited {
   color: hsl(210, 55%, 64%);
 }
 
@@ -490,8 +500,8 @@ body {
 }
 
 .bg-color-wrapper {
-  background-color: hsl(210, 29%, 11%);
-  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(210, 67%, 27%));
+  background-color: hsl(210, 72.1%, 16.9%);
+  background: linear-gradient(120deg, hsl(210, 72.1%, 16.9%), hsl(210, 67%, 27%));
 }
 
 .section {
@@ -671,6 +681,9 @@ img {
     gap: 1rem;
   }
 }
+.about-me-content p {
+  color: hsl(0, 0%, 95%);
+}
 
 .portrait {
   inline-size: 250px;
@@ -736,7 +749,7 @@ blockquote::after {
   display: block;
   inline-size: 100%;
   background-color: hsl(210, 34%, 80%);
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 5px;
@@ -748,7 +761,7 @@ textarea {
 
 label {
   position: absolute;
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
   opacity: 1;
   transition: all 300ms ease-in-out;
 }
@@ -765,7 +778,7 @@ label {
 
 .input:not(:-moz-placeholder-shown) ~ label {
   background-color: hsl(46, 98%, 51%);
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
   transform: translateY(-50px) scale(0.8);
   padding: 5px;
   border-radius: 5px;
@@ -774,7 +787,7 @@ label {
 .input:focus ~ label,
 .input:not(:placeholder-shown) ~ label {
   background-color: hsl(46, 98%, 51%);
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
   transform: translateY(-50px) scale(0.8);
   padding: 5px;
   border-radius: 5px;
@@ -819,11 +832,11 @@ label {
 hr {
   border: 0;
   block-size: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(23, 69, 115, 0.75), rgba(0, 0, 0, 0));
 }
 
 .lighten-hr {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(187, 204, 221, 0.75), rgba(255, 255, 255, 0));
 }
 
 .footer .sitelogo-container {
@@ -853,7 +866,7 @@ hr {
 }
 
 .white-icon {
-  fill: hsl(0, 0%, 95%);
+  fill: hsl(210, 34%, 80%);
 }
 
 .story .card_flex-container {
@@ -873,7 +886,7 @@ hr {
   align-items: center;
   flex-wrap: nowrap;
   background-color: hsl(210, 67%, 27%);
-  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(172, 60%, 63%));
+  background: linear-gradient(120deg, hsl(210, 72.1%, 16.9%), hsl(172, 60%, 63%));
   box-shadow: 0 10px 20px -8px rgba(189, 176, 176, 0.7);
   block-size: 375px;
   max-inline-size: 300px;
@@ -912,13 +925,13 @@ hr {
 
 .cta-btn {
   background-color: hsl(210, 67%, 27%);
-  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(172, 60%, 63%));
+  background: linear-gradient(120deg, hsl(210, 72.1%, 16.9%), hsl(172, 60%, 63%));
   background-size: 200%;
   transition: all 450ms ease-in-out;
 }
 .cta-btn:hover {
   background-position: right;
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
 }
 
 @media screen and (max-width: 600px) {
@@ -963,7 +976,7 @@ hr {
   position: absolute;
   inset-block-start: -20px;
   inset-inline-end: -98px;
-  color: hsl(210, 29%, 11%);
+  color: hsl(210, 72.1%, 16.9%);
   transition: transform 450ms ease-in-out;
 }
 
@@ -973,7 +986,7 @@ hr {
 
 .dark {
   background-color: hsl(210, 67%, 27%);
-  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(210, 67%, 27%));
+  background: linear-gradient(120deg, hsl(210, 72.1%, 16.9%), hsl(210, 67%, 27%));
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   border: none;
 }
@@ -1031,6 +1044,6 @@ hr {
 }
 
 .flex-child a {
-  background-color: hsl(210, 29%, 11%);
-  background: linear-gradient(120deg, hsl(210, 29%, 11%), hsl(210, 67%, 27%));
+  background-color: hsl(210, 72.1%, 16.9%);
+  background: linear-gradient(120deg, hsl(210, 72.1%, 16.9%), hsl(210, 67%, 27%));
 }/*# sourceMappingURL=styles.css.map */
