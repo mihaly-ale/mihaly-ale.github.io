@@ -863,13 +863,38 @@ label {
 	padding-block: 3rem;
 }
 
-.footer svg {
-	inline-size: 40px;
-	block-size: auto;
+.footer-icon {
+	inline-size: 80px;
+	block-size: 80px;
+	display: block;
+	text-decoration: none;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	background-color: hsl(209, 66%, 17%);
 }
-
-.social-link svg:hover {
-	fill: hsl(46, 98%, 51%);
+.footer-icon.light {
+	background-color: hsl(0, 0%, 95%);
+}
+.footer-icon:hover {
+	background-color: hsl(46, 98%, 51%);
+}
+.footer-icon.linkedin {
+	-webkit-mask-image: url(/content/logo/linkedin-icon.svg);
+	mask-image: url(/content/logo/linkedin-icon.svg);
+}
+.footer-icon.github {
+	-webkit-mask-image: url(/content/logo/github-icon.svg);
+	mask-image: url(/content/logo/github-icon.svg);
+}
+.footer-icon.credly {
+	-webkit-mask-image: url(/content/logo/credly-icon.svg);
+	mask-image: url(/content/logo/credly-icon.svg);
+}
+.footer-icon.codepen {
+	-webkit-mask-image: url(/content/logo/codepen-icon.svg);
+	mask-image: url(/content/logo/codepen-icon.svg);
 }
 
 hr {
