@@ -32,64 +32,85 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="bg-color-wrapper">
-				<div class="width-wrapper">
-					<nav class="navbar">
-						<a href="index.html">
-							<img
-								class="sitelogo"
-								src="content/logo/sitelogo-dark-bg.svg"
-								alt="Site logo." />
-						</a>
-						<ul class="navbar-list">
-							<li><a class="navbar-link active" href="#home">Home</a></li>
-							<li><a class="navbar-link" href="projects.html">Projects</a></li>
-							<li><a class="navbar-link" href="about.html">About</a></li>
-						</ul>
-					</nav>
-
-					<section class="section welcome">
-						<h1 class="page-title" id="home">
-							<span>Your</span> Online <br />Presence Made Easy
-						</h1>
-						<h2 class="page-subtitle">Affordable Web Solutions</h2>
+		<header class="index-header">
+			<div class="width-wrapper">
+				<nav class="navbar">
+					<a href="index.html">
 						<img
-							class="hero-image"
-							src="content/images/hero-image.png"
-							alt="Header image of the page showing a laptop and computer." />
+							class="sitelogo"
+							src="content/logo/sitelogo-dark-bg.svg"
+							alt="Site logo." />
+					</a>
+					<ul class="navbar-list">
+						<li><a class="navbar-link active" href="#home">Home</a></li>
+						<li><a class="navbar-link" href="projects.html">Projects</a></li>
+						<li><a class="navbar-link" href="about.html">About</a></li>
+					</ul>
+				</nav>
 
-						<div class="cta">
-							<a href="#projects" class="button cta-btn">
-								<img
-									class="cta-btn_icon"
-									src="content/logo/work-icon.svg"
-									alt="" />
-								My work
-							</a>
-							<a href="content/mihaly-ale-cv.pdf"
-								class="button cta-btn"
-								download>
-								<img
-								class="cta-btn_icon"
-								src="content/logo/resume-icon.svg"
-								alt="" />
-								My CV
-							</a>
-							<a href="#contact" class="button cta-btn cta-btn_contact">
-								<img
-									class="cta-btn_icon"
-									src="content/logo/contact-icon.svg"
-									alt="" />
-								Contact
-							</a>
-						</div>
-					</section>
+				<h1 class="page-title" id="home">
+					<span>Hi</span>, my name is <span>/miːˈhaɪ/</span>
+				</h1>
+				<h2 class="page-subtitle">I can make your website</h2>
+
+				<div class="cta">
+					<a href="#projects" class="button cta-btn">
+									<img
+										class="cta-btn_icon"
+										src="content/logo/work-icon.svg"
+										alt="" />
+									My work
+								</a>
+					<a href="contact.html" class="button cta-btn cta-btn_contact">
+						<img
+							class="cta-btn_icon"
+							src="content/logo/contact-icon.svg"
+							alt="" />
+						Contact
+					</a>
 				</div>
 			</div>
+			<!-- Photo by Steve Johnson: https://www.pexels.com/photo/multicolored-abstract-painting-1509534/ -->
 		</header>
 
 		<main>
+
+			<div class="bg-color-wrapper">
+				<div class="width-wrapper">
+					<section class="section about-me-intro" id="aboutme">
+						<h3 class="section-title">About Me</h3>
+
+						<div class="about-me-content">
+							<img
+								class="portrait"
+								src="content/images/portrait.jpg"
+								alt="Portait." />
+							<p>
+								Hey there, my name is Mihaly <i>(/miːˈhaɪ/</i>), exploring the
+								world of web development! Don't have the fancy job titles yet,
+								but I've got a decent handle on HTML, CSS, and I am refining my
+								understanding of JavaScript.
+								<br />
+								Hungarian by birth, fluent in English - lived it up in London
+								for a solid seven years, and I can hold my own in Spanish.
+								<br />
+								I'm eager to explore new trends of coding technologies, so hit
+								me up if you've got something exciting in mind for a self-taught
+								developer like me!
+							</p>
+						</div>
+
+						<div class="blockquote-container">
+							<blockquote>
+								Don't just teach your children to read. Teach them to question
+								what they read. Teach them to question everything.
+							</blockquote>
+						</div>
+					</section>
+
+
+				</div>
+			</div>
 			<section class="section projects" id="projects">
 				<div class="width-wrapper">
 					<h3 class="section-title">Projects</h3>
@@ -185,166 +206,67 @@
 				</div>
 			</section>
 
-			<div class="bg-color-wrapper">
-				<div class="width-wrapper">
-					<section class="section about-me-intro" id="aboutme">
-						<h3 class="section-title">About Me</h3>
 
-						<div class="about-me-content">
-							<img
-								class="portrait"
-								src="content/images/portrait.jpg"
-								alt="Portait." />
-							<p>
-								Hey there, my name is Mihaly <i>(/miːˈhaɪ/</i>), exploring the
-								world of web development! Don't have the fancy job titles yet,
-								but I've got a decent handle on HTML, CSS, and I am refining my
-								understanding of JavaScript.
-								<br />
-								Hungarian by birth, fluent in English - lived it up in London
-								for a solid seven years, and I can hold my own in Spanish.
-								<br />
-								I'm eager to explore new trends of coding technologies, so hit
-								me up if you've got something exciting in mind for a self-taught
-								developer like me!
-							</p>
-						</div>
-
-						<div class="blockquote-container">
-							<blockquote>
-								Don't just teach your children to read. Teach them to question
-								what they read. Teach them to question everything.
-							</blockquote>
-						</div>
-					</section>
-
-					<div class="section contact-form">
-						<h3 class="section-title form-title">Let's talk!</h3>
-						<form
-							class="contact-form"
-							action="https://formsubmit.co/jyymz0t2z@mozmail.com"
-							method="POST"
-							id="contact">
-							<div class="flex-container">
-								<div class="formgroup">
-									<input
-										class="input"
-										type="text"
-										id="name"
-										name="name"
-										placeholder="Your Name"
-										autocomplete="off"
-										maxlength="20"
-										required />
-									<label class="input-label" for="name">Name</label>
-								</div>
-								<div class="formgroup">
-									<input
-										class="input"
-										type="email"
-										id="email"
-										name="email"
-										placeholder="Your Email"
-										autocomplete="off"
-										required />
-									<label class="input-label" for="email">Email</label>
-								</div>
-								<div class="formgroup">
-									<textarea
-										class="input"
-										id="message"
-										name="email"
-										placeholder="Your Message"
-										required></textarea>
-									<label class="textarea-label" for="message">Message</label>
-								</div>
-								<input
-									type="hidden"
-									name="_next"
-									value="https://mihaly-ale.github.io/portfolio/thanks.html" />
-								<input
-									type="hidden"
-									name="_autoresponse"
-									value="Thank you for reaching out! Your email has been received and I appreciate you taking the time to contact me.
-									Please note that I aim to respond to all inquiries within 5 working days.
-
-									I am looking forward to assisting you soon.
-
-									Best regards,
-
-									Mihaly" />
-								<button
-									type="submit"
-									name="submit"
-									class="button dark white-shadow submit-button">
-									Send
-									<img
-										src="content/logo/send-icon.svg"
-										alt=""
-										class="cta-btn_icon send-icon" />
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="width-wrapper">
-				<div class="sitelogo-container">
-					<a href="#home">
-						<img
-							class="sitelogo"
-							src="content/logo/sitelogo-light-bg.svg"
-							alt="Site logo." />
-					</a>
+		<div class="bg-color-wrapper">
+			<footer class="footer inverse-font-color">
+				<div class="width-wrapper">
+					<div class="sitelogo-container">
+						<a href="index.html#home">
+							<img
+								class="sitelogo"
+								src="content/logo/sitelogo-dark-bg.svg"
+								alt="Site logo." />
+						</a>
+					</div>
+
+					<hr class="lighten-hr" />
+
+					<ul class="flex-container">
+						<li>
+							<a
+								class="footer-icon light linkedin"
+								href="https://www.linkedin.com/in/mihaly-ale/"
+								target="_blank">
+								<span class="sr-only">My LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a
+								class="footer-icon light github"
+								href="https://www.github.com/mihaly-ale"
+								target="_blank">
+								<span class="sr-only">My GitHub</span>
+							</a>
+						</li>
+						<li>
+							<a
+								class="footer-icon light credly"
+								href="https://www.credly.com/users/mihaly-ale">
+								<span class="sr-only">My Credly badges</span>
+							</a>
+						</li>
+						<li>
+							<a
+								class="footer-icon light codepen"
+								href="https://codepen.io/mihaly-ale"
+								target="_blank">
+								<span class="sr-only">My CodePen</span>
+							</a>
+						</li>
+					</ul>
+
+					<p class="copyright">&copy; Mihaly Ale, 2024</p>
+					<p class="attribution">
+						Vectors and icons by
+						<a class="dark-theme" href="https://www.svgrepo.com" target="_blank"
+							>SVG Repo</a
+						>.
+					</p>
 				</div>
+			</footer>
+		</div>
 
-				<hr />
-
-				<ul class="flex-container">
-					<li>
-						<a
-							class="footer-icon linkedin"
-							href="https://www.linkedin.com/in/mihaly-ale/"
-							target="_blank">
-							<span class="sr-only">My LinkedIn</span>
-						</a>
-					</li>
-					<li>
-						<a
-							class="footer-icon github"
-							href="https://www.github.com/mihaly-ale"
-							target="_blank">
-							<span class="sr-only">My GitHub</span>
-						</a>
-					</li>
-					<li>
-						<a
-							class="footer-icon credly"
-							href="https://www.credly.com/users/mihaly-ale">
-							<span class="sr-only">My Credly badges</span>
-						</a>
-					</li>
-					<li>
-						<a
-							class="footer-icon codepen"
-							href="https://codepen.io/mihaly-ale"
-							target="_blank">
-							<span class="sr-only">My CodePen</span>
-						</a>
-					</li>
-				</ul>
-
-				<p class="copyright">&copy; Mihaly Ale, 2024</p>
-				<p class="attribution">
-					Vectors and icons by
-					<a class="light-theme" href="https://www.svgrepo.com" target="_blank"
-						>SVG Repo</a
-					>.
-				</p>
-			</div>
-		</footer>
 	</body>
 </html>
