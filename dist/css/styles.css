@@ -527,7 +527,7 @@ body {
   padding-inline: 0.65rem;
 }
 
-.section:not(.contact-form) {
+.section:not(.form) {
   padding-block-start: 5rem;
 }
 
@@ -739,7 +739,7 @@ blockquote::after {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-block: auto;
 }
 
@@ -755,13 +755,13 @@ blockquote::after {
   background-color: hsl(210, 34%, 80%);
   color: hsl(209, 66%, 17%);
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 2px;
 }
 
 textarea {
-  min-block-size: 5rem;
+  min-block-size: 8rem;
   margin-block-end: 2rem;
 }
 
@@ -773,30 +773,30 @@ label {
 }
 
 .input-label {
-  inset-block-start: 25px;
+  inset-block-start: 10px;
   inset-inline-start: 10px;
 }
 
 .textarea-label {
-  inset-block-start: 20px;
+  inset-block-start: 12px;
   inset-inline-start: 10px;
 }
 
 .input:not(:-moz-placeholder-shown) ~ label {
-  background-color: hsl(209, 66%, 17%);
-  color: hsl(46, 98%, 51%);
-  transform: translateY(-50px) scale(0.8);
+  background-color: hsl(210, 34%, 80%);
+  color: hsl(209, 66%, 17%);
+  transform: translateY(-37px) scale(0.8);
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .input:focus ~ label,
 .input:not(:placeholder-shown) ~ label {
-  background-color: hsl(209, 66%, 17%);
-  color: hsl(46, 98%, 51%);
-  transform: translateY(-50px) scale(0.8);
+  background-color: hsl(210, 34%, 80%);
+  color: hsl(209, 66%, 17%);
+  transform: translateY(-37px) scale(0.8);
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 ::-moz-placeholder {
@@ -813,12 +813,8 @@ label {
 }
 
 .input:focus {
-  border: 1px solid hsl(209, 66%, 17%);
-  border-radius: 5px;
-}
-
-.section.form {
-  padding-block: 1rem;
+  background: hsl(0, 0%, 95%);
+  border-radius: 2px;
 }
 
 .no-top-margin {
@@ -1053,7 +1049,19 @@ hr {
 .submit-button {
   border: none;
   background: hsl(209, 66%, 17%);
+  margin-inline-start: 0;
+  color: hsl(46, 98%, 51%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid hsl(172, 60%, 63%);
+  transition: all 250ms ease-in-out;
 }
 .submit-button:hover {
   background: hsl(210, 71%, 32%);
+}
+.submit-button .send-icon {
+  transition: transform 250ms ease-in-out;
+}
+.submit-button:hover .send-icon {
+  transform: rotate(45deg);
 }/*# sourceMappingURL=styles.css.map */
