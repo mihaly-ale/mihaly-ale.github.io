@@ -31,74 +31,90 @@
 		<link rel="stylesheet" href="dist/css/styles.css" />
 	</head>
 
-  <div class="width-wrapper">
-    <div class="section contact-form">
-                <h1 class="form-title">Let's talk!</h1>
-                <form
-                  class="contact-form"
-                  action="https://formsubmit.co/jyymz0t2z@mozmail.com"
-                  method="POST"
-                  id="contact">
-                  <div class="flex-container">
-                    <div class="formgroup">
-                      <input
-                        class="input"
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                        autocomplete="off"
-                        maxlength="20"
-                        required />
-                      <label class="input-label" for="name">Name</label>
-                    </div>
-                    <div class="formgroup">
-                      <input
-                        class="input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Your Email"
-                        autocomplete="off"
-                        required />
-                      <label class="input-label" for="email">Email</label>
-                    </div>
-                    <div class="formgroup">
-                      <textarea
-                        class="input"
-                        id="message"
-                        name="email"
-                        placeholder="Your Message"
-                        required></textarea>
-                      <label class="textarea-label" for="message">Message</label>
-                    </div>
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://mihaly-ale.github.io/portfolio/thanks.html" />
-                    <input
-                      type="hidden"
-                      name="_autoresponse"
-                      value="Thank you for reaching out! Your email has been received and I appreciate you taking the time to contact me.
-                      Please note that I aim to respond to all inquiries within 5 working days.
+	<body>
+    <div class="width-wrapper">
+      <section class="section form">
+        <h1 class="form-title">Let's talk!</h1>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/jyymz0t2z@mozmail.com"
+          method="POST"
+          id="contact">
+          <!-- <div class="flex-container"> -->
+          <div class="formgroup">
+            <input
+              class="input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              autocomplete="off"
+              maxlength="20"
+              required />
+            <label class="input-label" for="name">Name</label>
+          </div>
+          <div class="formgroup">
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              autocomplete="off"
+              required />
+            <label class="input-label" for="email">Email</label>
+          </div>
+          <div class="formgroup">
+            <textarea
+              class="input"
+              id="message"
+              name="email"
+              placeholder="Your Message"
+              required></textarea>
+            <label class="textarea-label" for="message">Message</label>
+          </div>
+          <div class="formgroup hidden">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mihaly-ale.github.io/portfolio/thanks.html" />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thank you for reaching out! Your email has been received and I appreciate you taking the time to contact me.
+                                      Please note that I aim to respond to all inquiries within 5 working days.
+                                      I am looking forward to assisting you soon.
+                                      Best regards,
 
-                      I am looking forward to assisting you soon.
+                                      Mihaly" />
+          </div>
+          <button
+            type="submit"
+            name="submit"
+            class="button cta-btn submit-button">
+            Send
+            <img
+              src="content/logo/send-icon.svg"
+              alt=""
+              class="cta-btn_icon send-icon" />
+          </button>
+        </form>
+      </section>
 
-                      Best regards,
+          <hr class="dark-hr"/>
 
-                      Mihaly" />
-                    <button
-                      type="submit"
-                      name="submit"
-                      class="button dark white-shadow submit-button">
-                      Send
-                      <img
-                        src="content/logo/send-icon.svg"
-                        alt=""
-                        class="cta-btn_icon send-icon" />
-                    </button>
-                  </div>
-                </form>
+          <footer>
+            <div class="sitelogo-container no-top-margin">
+                <a href="index.html#home">
+                  <img
+                    class="sitelogo"
+                    src="content/logo/sitelogo-light-bg.svg"
+                    alt="Site logo." />
+                </a>
               </div>
-  </div>
-  </html>
+          </footer>
+    </div>
+    <!-- width-wrapper end -->
+
+  </body>
+</html>

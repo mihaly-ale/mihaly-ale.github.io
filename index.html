@@ -32,49 +32,52 @@
 	</head>
 
 	<body>
-		<header class="index-header">
-			<div class="width-wrapper">
-				<nav class="navbar">
-					<a href="index.html">
-						<img
-							class="sitelogo"
-							src="content/logo/sitelogo-dark-bg.svg"
-							alt="Site logo." />
-					</a>
-					<ul class="navbar-list">
-						<li><a class="navbar-link active" href="#home">Home</a></li>
-						<li><a class="navbar-link" href="projects.html">Projects</a></li>
-						<li><a class="navbar-link" href="about.html">About</a></li>
-					</ul>
-				</nav>
+		<header id="home">
+			<div class="bg-image-wrapper">
+				<!-- Photo by Steve Johnson: https://www.pexels.com/photo/multicolored-abstract-painting-1509534/ -->
+				<div class="width-wrapper">
+					<nav class="navbar">
+						<a href="index.html">
+							<img
+								class="sitelogo"
+								src="content/logo/sitelogo-dark-bg.svg"
+								alt="Site logo." />
+						</a>
+						<ul class="navbar-list">
+							<li><a class="navbar-link active" href="#home">Home</a></li>
+							<li><a class="navbar-link" href="projects.html">Projects</a></li>
+							<li><a class="navbar-link" href="about.html">About</a></li>
+						</ul>
+					</nav>
 
-				<h1 class="page-title" id="home">
-					<span>Hi</span>, my name is <span>/miːˈhaɪ/</span>
-				</h1>
-				<h2 class="page-subtitle">I can make your website</h2>
+					<h1 class="page-title">
+						<span>Hi</span>, my name is <span>/miːˈhaɪ/</span>
+					</h1>
+					<h2 class="page-subtitle">I can make your website</h2>
 
-				<div class="cta">
-					<a href="#projects" class="button cta-btn">
-									<img
-										class="cta-btn_icon"
-										src="content/logo/work-icon.svg"
-										alt="" />
-									My work
-								</a>
-					<a href="contact.html" class="button cta-btn cta-btn_contact">
-						<img
-							class="cta-btn_icon"
-							src="content/logo/contact-icon.svg"
-							alt="" />
-						Contact
-					</a>
+					<div class="cta">
+						<a href="#projects" class="button cta-btn">
+							<img
+								class="cta-btn_icon"
+								src="content/logo/work-icon.svg"
+								alt="" />
+							My work
+						</a>
+						<a href="contact.html" class="button cta-btn cta-btn_contact">
+							<img
+								class="cta-btn_icon"
+								src="content/logo/contact-icon.svg"
+								alt="" />
+							Contact
+						</a>
+					</div>
 				</div>
+				<!-- bg-image-wrapper end -->
 			</div>
-			<!-- Photo by Steve Johnson: https://www.pexels.com/photo/multicolored-abstract-painting-1509534/ -->
+			<!-- width-wrapper end -->
 		</header>
 
 		<main>
-
 			<div class="bg-color-wrapper">
 				<div class="width-wrapper">
 					<section class="section about-me-intro" id="aboutme">
@@ -100,17 +103,16 @@
 							</p>
 						</div>
 
-						<div class="blockquote-container">
-							<blockquote>
-								Don't just teach your children to read. Teach them to question
-								what they read. Teach them to question everything.
-							</blockquote>
-						</div>
+						<blockquote>
+							Don't just teach your children to read. Teach them to question
+							what they read. Teach them to question everything.
+						</blockquote>
 					</section>
-
-
 				</div>
+				<!-- width-wrapper end -->
 			</div>
+			<!-- bg-color-wrapper end -->
+
 			<section class="section projects" id="projects">
 				<div class="width-wrapper">
 					<h3 class="section-title">Projects</h3>
@@ -141,7 +143,9 @@
 									data attributes, ternary operators and template literals.
 								</p>
 							</div>
+							<!-- overlay end -->
 						</div>
+						<!-- project-tile end / Calculator -->
 
 						<div class="project-tile">
 							<h4 class="project-tile_title">Etch-a-Sketch</h4>
@@ -169,7 +173,9 @@
 									created with Javascript.
 								</p>
 							</div>
+							<!-- overlay end -->
 						</div>
+						<!-- project-tile end / Etch-a-Sketch -->
 
 						<div class="project-tile">
 							<h4 class="project-tile_title">Product Landing Page</h4>
@@ -197,20 +203,23 @@
 									scroll-up.
 								</p>
 							</div>
+							<!-- overlay end -->
 						</div>
+						<!-- project-tile end / Product Landing Page -->
+
 					</div>
-
-					<a href="projects.html" class="button dark animated"
-						>See more projects</a
-					>
+					<!-- project-grid-end -->
+						<a href="projects.html" class="button dark animated"
+							>See more projects</a
+						>
 				</div>
+				<!-- width-wrapper-end -->
 			</section>
-
-
+			<!-- projects section end -->
 		</main>
 
 		<div class="bg-color-wrapper">
-			<footer class="footer inverse-font-color">
+			<footer>
 				<div class="width-wrapper">
 					<div class="sitelogo-container">
 						<a href="index.html#home">
@@ -221,9 +230,9 @@
 						</a>
 					</div>
 
-					<hr class="lighten-hr" />
+					<hr />
 
-					<ul class="flex-container">
+					<ul class="social-links">
 						<li>
 							<a
 								class="footer-icon light linkedin"
@@ -260,13 +269,12 @@
 					<p class="copyright">&copy; Mihaly Ale, 2024</p>
 					<p class="attribution">
 						Vectors and icons by
-						<a class="dark-theme" href="https://www.svgrepo.com" target="_blank"
-							>SVG Repo</a
-						>.
+						<a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>.
 					</p>
 				</div>
+				<!-- width-wrapper-end -->
 			</footer>
 		</div>
-
+		<!-- bg-color-wrapper end -->
 	</body>
 </html>
