@@ -560,7 +560,7 @@ ul {
 }
 
 .bg-image-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/content/images/pexels-steve-johnson-1509534.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/content/images/hero-image.jpg");
   background-size: cover;
   background-position: bottom;
   width: 100%;
@@ -691,12 +691,11 @@ ul {
 .portrait {
   inline-size: 250px;
   float: inline-start;
-  background-color: hsl(0, 0%, 95%);
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
-          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
-  shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
   margin-inline-end: 1rem;
-  align-self: center;
+}
+
+.blockquote-container {
+  padding-block-start: 1rem;
 }
 
 blockquote {
@@ -727,10 +726,18 @@ blockquote::before {
 
 blockquote::after {
   content: close-quote;
-  inline-size: 39px;
-  block-size: 101px;
-  inset-block-end: 0px;
-  inset-inline-end: 0px;
+  inline-size: 27px;
+  block-size: 40px;
+  inset-block-end: 57px;
+  inset-inline-end: 35px;
+}
+
+.section.form {
+  padding-block: 1.25rem;
+}
+
+.form-title {
+  margin-block-end: 3rem;
 }
 
 .contact-form {
@@ -841,7 +848,7 @@ hr {
   border: 0;
   block-size: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), hsla(209, 66%, 17%, 0.65), rgba(0, 0, 0, 0));
-  margin-block: 1.5rem;
+  margin-block-start: 1.5rem;
 }
 
 .social-links {
