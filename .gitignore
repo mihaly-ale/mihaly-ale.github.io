@@ -3,8 +3,7 @@
 dist/
 *.txt
 README.md
+*.scss
 
 
-#Exemption
-!dist/css/styles.css
 
