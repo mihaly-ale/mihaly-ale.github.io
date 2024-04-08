@@ -560,7 +560,7 @@ ul {
 }
 
 .bg-image-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../content/images/hero-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("portfolio/content/images/hero-image.jpg");
   background-size: cover;
   background-position: bottom;
   width: 100%;
