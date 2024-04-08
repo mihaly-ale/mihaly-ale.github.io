@@ -369,7 +369,7 @@ a {
 
 .page-title {
   font-family: Alkatra, sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   color: hsl(0, 0%, 95%);
 }
 .page-title span:first-of-type {
@@ -380,9 +380,7 @@ a {
   white-space: nowrap;
 }
 
-.secondary {
-  margin-block-start: 0.5rem;
-  margin-block-end: 4rem;
+.page-title.secondary {
   color: hsl(209, 66%, 17%);
 }
 
@@ -399,7 +397,7 @@ a {
 
 .section-title {
   font-family: Alkatra, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 blockquote {
@@ -528,7 +526,7 @@ body {
 }
 
 .section:not(.form) {
-  padding-block-start: 5rem;
+  padding-block-start: 3.5rem;
 }
 
 .section-title {
@@ -564,7 +562,7 @@ ul {
   background-size: cover;
   background-position: bottom;
   width: 100%;
-  height: 100%;
+  height: 85vh;
 }
 
 .cta {
@@ -582,15 +580,20 @@ ul {
 }
 
 .page-title {
-  margin-block-start: 7rem;
+  margin-block-start: 4rem;
   margin-block-end: 0;
   margin-inline: 1rem;
   mix-blend-mode: hard-light;
 }
 
+.page-title.secondary {
+  margin-block: 2rem;
+  margin-inline: 0;
+}
+
 .page-subtitle {
   margin-block-start: 1.25rem;
-  margin-block-end: 7rem;
+  margin-block-end: 5rem;
   margin-inline: 1rem;
   mix-blend-mode: plus-lighter;
 }
@@ -829,13 +832,13 @@ label {
 }
 
 footer .sitelogo-container {
-  padding-block: 7rem;
+  padding-block: 3.5rem;
 }
 
 footer .sitelogo {
   text-align: center;
   margin-inline: auto;
-  block-size: 2.5rem;
+  block-size: 2rem;
 }
 
 hr {
@@ -858,7 +861,7 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-block: 3rem;
+  padding-block: 1.5rem;
   padding-inline: 0;
 }
 
@@ -872,7 +875,7 @@ hr {
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   background-color: hsl(209, 66%, 17%);
-  scale: 0.7;
+  scale: 0.55;
 }
 .footer-icon.light {
   background-color: hsl(0, 0%, 95%);
