@@ -560,7 +560,7 @@ ul {
 }
 
 .bg-image-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("portfolio/content/images/hero-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../content/images/hero-image.jpg");
   background-size: cover;
   background-position: bottom;
   width: 100%;
@@ -881,20 +881,20 @@ hr {
   background-color: hsl(46, 98%, 51%);
 }
 .footer-icon.linkedin {
-  -webkit-mask-image: url("portfolio/content/logo.linkedin-icon.svg");
-          mask-image: url("portfolio/content/logo.linkedin-icon.svg");
+  -webkit-mask-image: url("../../content/logo/linkedin-icon.svg");
+          mask-image: url("../../content/logo/linkedin-icon.svg");
 }
 .footer-icon.github {
-  -webkit-mask-image: url("portfolio/content/logo/github-icon.svg");
-          mask-image: url("portfolio/content/logo/github-icon.svg");
+  -webkit-mask-image: url("../../content/logo/github-icon.svg");
+          mask-image: url("../../content/logo/github-icon.svg");
 }
 .footer-icon.credly {
-  -webkit-mask-image: url("portfolio/content/logo/credly-icon.svg");
-          mask-image: url("portfolio/content/logo/credly-icon.svg");
+  -webkit-mask-image: url("../../content/logo/credly-icon.svg");
+          mask-image: url("../../content/logo/credly-icon.svg");
 }
 .footer-icon.codepen {
-  -webkit-mask-image: url("portfolio/content/logo/codepen-icon.svg");
-          mask-image: url("portfolio/content/logo/codepen-icon.svg");
+  -webkit-mask-image: url("../../content/logo/codepen-icon.svg");
+          mask-image: url("../../content/logo/codepen-icon.svg");
 }
 
 .copyright {
