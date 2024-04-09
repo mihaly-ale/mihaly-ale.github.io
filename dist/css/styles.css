@@ -561,8 +561,8 @@ ul {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../content/images/hero-image.jpg");
   background-size: cover;
   background-position: bottom;
-  width: 100%;
-  height: 85vh;
+  inline-size: 100%;
+  block-size: 720px;
 }
 
 .cta {
