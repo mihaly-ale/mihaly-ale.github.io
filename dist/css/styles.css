@@ -612,6 +612,7 @@ ul {
   aspect-ratio: 1/1.1;
   align-content: stretch;
   position: relative;
+  border-radius: 10px;
 }
 
 .overlay {
@@ -632,9 +633,15 @@ ul {
 }
 .overlay ul {
   margin-block: 0.25em;
+  gap: 1rem;
+  padding: 0;
 }
 .overlay ul li {
   color: hsl(0, 0%, 95%);
+}
+.overlay ul li span {
+  font-weight: bold;
+  font-size: 1.15rem;
 }
 
 .project-tile:hover .overlay {
@@ -655,7 +662,7 @@ ul {
   background: white;
   z-index: 1;
   pointer-events: none;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .project-tile_title:after {
   content: "";
@@ -677,7 +684,7 @@ ul {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .about-me-intro {
@@ -958,21 +965,21 @@ hr {
   padding-inline: 1.25em;
   position: relative;
   border-radius: 5px;
-  outline: 2px solid hsl(46, 98%, 51%);
   gap: 1rem;
   font-weight: 700;
-}
-.button:focus {
-  outline: 4px solid currentColor;
 }
 
 .cta-btn {
   background-color: hsl(210, 71%, 32%);
   background: linear-gradient(120deg, hsl(209, 66%, 17%), hsl(172, 60%, 63%));
+  outline: 2px solid hsl(46, 98%, 51%);
   background-size: 200%;
   transition: all 450ms ease-in-out;
   margin-left: 2.5rem;
   mix-blend-mode: hard-light;
+}
+.cta-btn:focus {
+  outline: 4px solid currentColor;
 }
 .cta-btn:hover {
   background-position: right;
@@ -1024,15 +1031,16 @@ hr {
 }
 
 .animated {
-  inline-size: 12rem;
+  inline-size: 12.5rem;
   padding: 0.25em;
   margin-inline-start: auto;
   margin-inline-end: 1.5rem;
   position: relative;
   transition: 450ms;
 }
-.animated:hover {
+.animated:focus, .animated:hover {
   padding-inline-end: 1.25em;
+  outline: none;
 }
 
 .animated::after {
@@ -1043,7 +1051,8 @@ hr {
   transition: all 450ms;
 }
 
-.animated:hover::after {
+.animated:hover::after,
+.animated:focus::after {
   opacity: 1;
   inset-inline-end: 17px;
 }
