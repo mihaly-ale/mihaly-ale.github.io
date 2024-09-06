@@ -652,7 +652,7 @@ ul {
   font-size: 1.15rem;
 }
 
-.project-tile:hover .overlay {
+[class|=project-tile]:hover .overlay {
   transform: scale(1);
 }
 
@@ -685,6 +685,18 @@ ul {
   inset-block-start: 2px;
   background-color: hsl(210, 71%, 32%);
   position: relative;
+}
+
+.clickable {
+  pointer-events: initial;
+}
+.clickable h4 {
+  margin: 0;
+  display: inline;
+}
+
+.clickable:hover ~ .overlay {
+  transform: scale(1);
 }
 
 .project-tile_thumbnail {
