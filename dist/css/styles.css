@@ -620,6 +620,8 @@ ul {
 .project-tile .project-video {
   width: 100%;
   height: 90%;
+  padding-bottom: 1.5rem;
+  background-color: black;
   border-radius: inherit;
 }
 
