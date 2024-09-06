@@ -450,10 +450,6 @@ h2 + p {
   font-size: 2.5rem;
 }
 
-.form-title {
-  color: hsl(209, 66%, 17%);
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -525,12 +521,9 @@ body {
 }
 
 .section {
+  padding-block-start: 3.5rem;
   padding-block-end: 7rem;
   padding-inline: 0.65rem;
-}
-
-.section:not(.form) {
-  padding-block-start: 3.5rem;
 }
 
 .section-title {
@@ -766,14 +759,6 @@ blockquote::after {
   inset-inline-end: 35px;
 }
 
-.section.form {
-  padding-block: 1.25rem;
-}
-
-.form-title {
-  margin-block-end: 3rem;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -786,18 +771,22 @@ blockquote::after {
 
 .formgroup {
   position: relative;
-  inline-size: 80%;
   /* for label placement - floating label */
+  inline-size: 80%;
 }
 
 .input {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 100%;
-  background-color: hsl(210, 34%, 80%);
+  background-color: hsl(0, 0%, 95%);
   color: hsl(209, 66%, 17%);
   font-size: 1.5rem;
   padding: 0.5rem;
-  border: none;
+  border-inline-start: 10px solid hsl(0, 0%, 95%);
+  border-block: none;
+  border-inline-end: none;
   border-radius: 2px;
 }
 
@@ -810,34 +799,29 @@ label {
   position: absolute;
   color: hsl(209, 66%, 17%);
   opacity: 1;
+  letter-spacing: 1px;
   transition: all 300ms ease-in-out;
-}
-
-.input-label {
-  inset-block-start: 10px;
-  inset-inline-start: 10px;
-}
-
-.textarea-label {
   inset-block-start: 12px;
   inset-inline-start: 10px;
 }
 
 .input:not(:-moz-placeholder-shown) ~ label {
-  background-color: hsl(210, 34%, 80%);
+  background-color: hsl(172, 76%, 81%);
   color: hsl(209, 66%, 17%);
-  transform: translateY(-37px) scale(0.8);
-  padding: 5px;
+  transform: translateY(-34px) scale(0.9);
+  padding: 2px 10px;
   border-radius: 2px;
+  outline-offset: -1px;
 }
 
 .input:focus ~ label,
 .input:not(:placeholder-shown) ~ label {
-  background-color: hsl(210, 34%, 80%);
+  background-color: hsl(172, 76%, 81%);
   color: hsl(209, 66%, 17%);
-  transform: translateY(-37px) scale(0.8);
-  padding: 5px;
+  transform: translateY(-34px) scale(0.9);
+  padding: 2px 10px;
   border-radius: 2px;
+  outline-offset: -1px;
 }
 
 ::-moz-placeholder {
@@ -849,17 +833,22 @@ label {
 }
 
 .input:hover {
-  background: hsl(0, 0%, 95%);
-  border-bottom: 1px solid hsl(209, 66%, 17%);
+  border-inline-end: 10px solid hsl(46, 98%, 51%);
 }
 
 .input:focus {
-  background: hsl(0, 0%, 95%);
-  border-radius: 2px;
+  background-color: hsl(172, 76%, 81%);
+  border-inline-start: 10px solid hsl(172, 76%, 81%);
 }
 
-.no-top-margin {
-  padding-block: 3rem !important;
+.input:not(:-moz-placeholder-shown) {
+  background-color: hsl(172, 76%, 81%);
+  border-inline-start: 10px solid hsl(172, 76%, 81%);
+}
+
+.input:not(:placeholder-shown) {
+  background-color: hsl(172, 76%, 81%);
+  border-inline-start: 10px solid hsl(172, 76%, 81%);
 }
 
 footer .sitelogo-container {
@@ -1085,7 +1074,7 @@ hr {
 
 .translateX:hover {
   transform: translate(5px, 7px) rotate(5deg);
-  border: 1px solid hsl(210, 34%, 80%);
+  border: 1px solid hsl(210, 55%, 90%);
 }
 
 .submit-button {
