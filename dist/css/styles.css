@@ -356,6 +356,14 @@ p {
   word-spacing: 1px;
 }
 
+.dark-font {
+  color: hsl(209, 66%, 17%);
+}
+
+.light-font {
+  color: hsl(0, 0%, 95%);
+}
+
 a {
   text-decoration: none;
 }
@@ -518,7 +526,6 @@ body {
 .bg-color-wrapper {
   background-color: hsl(209, 66%, 17%);
   background: linear-gradient(120deg, hsl(209, 66%, 17%), hsl(210, 71%, 32%));
-  color: hsl(0, 0%, 95%);
 }
 
 .section {
