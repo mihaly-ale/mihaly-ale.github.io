@@ -518,6 +518,7 @@ body {
 .bg-color-wrapper {
   background-color: hsl(209, 66%, 17%);
   background: linear-gradient(120deg, hsl(209, 66%, 17%), hsl(210, 71%, 32%));
+  color: hsl(0, 0%, 95%);
 }
 
 .section {
@@ -700,11 +701,6 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-}
-
-.about-me-intro {
-  color: hsl(0, 0%, 95%);
-  line-height: 2.25;
 }
 
 @media screen and (max-width: 450px) {
