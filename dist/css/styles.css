@@ -981,6 +981,7 @@ hr {
   border-radius: 5px;
   gap: 1rem;
   font-weight: 700;
+  border: none;
 }
 
 .cta-btn {
@@ -989,7 +990,7 @@ hr {
   outline: 2px solid hsl(46, 98%, 51%);
   background-size: 200%;
   transition: all 450ms ease-in-out;
-  margin-left: 2.5rem;
+  margin-inline-start: 2.5rem;
   mix-blend-mode: hard-light;
 }
 .cta-btn:focus {
@@ -1041,7 +1042,6 @@ hr {
   background-color: hsl(210, 71%, 32%);
   background: linear-gradient(120deg, hsl(209, 66%, 17%), hsl(210, 71%, 32%));
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  border: none;
 }
 
 .animated {
@@ -1082,19 +1082,12 @@ hr {
 
 .submit-button {
   border: none;
-  background: hsl(209, 66%, 17%);
   margin-inline-start: 0;
-  color: hsl(46, 98%, 51%);
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: 2px solid hsl(172, 60%, 63%);
-  transition: all 250ms ease-in-out;
-}
-.submit-button:hover {
-  background: hsl(210, 71%, 32%);
 }
 .submit-button .send-icon {
-  transition: transform 250ms ease-in-out;
+  transition: all 450ms ease-in-out;
 }
 .submit-button:hover .send-icon {
   transform: rotate(45deg);
