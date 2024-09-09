@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   box-sizing: border-box;
 }
@@ -13,7 +12,7 @@
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
@@ -30,10 +29,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -68,12 +65,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  block-size: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  block-size: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -81,10 +75,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -101,13 +93,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-block-end: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-block-end: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -125,10 +114,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -178,14 +165,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -253,18 +236,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -287,10 +264,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -306,10 +281,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -324,10 +297,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -366,7 +337,6 @@ template {
   font-size: 16px;
   line-height: 1.45;
 }
-
 @media screen and (min-width: 650px) {
   :root {
     font-size: 18px;
@@ -381,9 +351,12 @@ body {
 p {
   color: hsl(0, 0%, 95%);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.5px;
   word-spacing: 1px;
+  max-width: 85ch;
+  line-height: 1.85;
+  margin: 0;
 }
 
 .dark-font {
@@ -412,11 +385,9 @@ a {
   font-size: 2.75rem;
   color: hsl(0, 0%, 95%);
 }
-
 .page-title span:first-of-type {
   color: hsl(46, 98%, 51%);
 }
-
 .page-title span:last-of-type {
   color: hsl(172, 60%, 63%);
   white-space: nowrap;
@@ -461,20 +432,18 @@ blockquote {
 .attribution {
   font-size: 0.85rem;
 }
-
 .attribution a {
   color: hsl(172, 60%, 63%);
 }
-
 .attribution a:visited {
   color: hsl(210, 55%, 64%);
 }
 
-.story.white-bg>p {
+.story.white-bg > p {
   color: hsl(209, 66%, 17%);
 }
 
-h2+p {
+h2 + p {
   color: hsl(46, 98%, 51%);
   background-color: hsl(210, 71%, 32%);
   padding: 0.5em 0.75em;
@@ -510,7 +479,6 @@ h2+p {
   flex-wrap: nowrap;
   gap: 1rem;
 }
-
 @media screen and (min-width: 600px) {
   .navbar-list {
     gap: 2rem;
@@ -566,7 +534,7 @@ body {
 .section {
   padding-block-start: 3.5rem;
   padding-block-end: 7rem;
-  padding-inline: 0.65rem;
+  padding-inline: 1rem;
 }
 
 .section-title {
@@ -653,7 +621,6 @@ ul {
   position: relative;
   border-radius: 10px;
 }
-
 .project-tile .project-video {
   width: 100%;
   height: 90%;
@@ -678,17 +645,14 @@ ul {
   pointer-events: none;
   border-radius: 5px;
 }
-
 .overlay ul {
   margin-block: 0.25em;
   gap: 1rem;
   padding: 0;
 }
-
 .overlay ul li {
   color: hsl(0, 0%, 95%);
 }
-
 .overlay ul li span {
   font-weight: bold;
   font-size: 1.15rem;
@@ -698,7 +662,7 @@ ul {
   transform: scale(1);
 }
 
-.project-tile>* {
+.project-tile > * {
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -714,16 +678,15 @@ ul {
   pointer-events: none;
   border-radius: 5px;
 }
-
 .project-tile_title:after {
   content: "";
   display: inline-flex;
   -webkit-mask-image: url(/content/logo/link-external.svg);
-  mask-image: url(/content/logo/link-external.svg);
+          mask-image: url(/content/logo/link-external.svg);
   block-size: 1rem;
   inline-size: 1rem;
   -webkit-mask-size: cover;
-  mask-size: cover;
+          mask-size: cover;
   inset-inline-start: 5px;
   inset-block-start: 2px;
   background-color: hsl(210, 71%, 32%);
@@ -733,13 +696,12 @@ ul {
 .clickable {
   pointer-events: initial;
 }
-
 .clickable h4 {
   margin: 0;
   display: inline;
 }
 
-.clickable:hover~.overlay {
+.clickable:hover ~ .overlay {
   transform: scale(1);
 }
 
@@ -747,60 +709,54 @@ ul {
   inline-size: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
-}
-
-@media screen and (max-width: 450px) {
-  .about-me-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 }
 
 .portrait {
   inline-size: 250px;
+  margin-inline-end: 2rem;
+  margin-block-end: 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   float: inline-start;
-  margin-inline-end: 1rem;
 }
 
-.blockquote-container {
-  padding-block-start: 1rem;
+.about-me-content p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
+@media (min-width: 700px) {
+  .about-me-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .portrait {
+    float: none;
+    margin: 0;
+  }
+}
 blockquote {
   position: relative;
   letter-spacing: 2px;
+  padding: 3rem 3rem 0;
   quotes: "“" "”" "‘" "’";
-  margin-block: 5rem 0;
-  margin-inline: auto;
-  width: 100%;
-  padding: 25px 25px;
-}
-
-blockquote::before,
-blockquote::after {
-  position: absolute;
-  font-size: 5em;
-  color: hsl(210, 55%, 64%);
-  opacity: 0.5;
+  margin: 3rem auto 0;
+  z-index: 100;
+  max-inline-size: 75ch;
 }
 
 blockquote::before {
+  z-index: -100;
   content: open-quote;
-  inline-size: 1px;
-  block-size: 1px;
-  inset-block-start: -68px;
-  inset-inline-start: -10px;
-}
-
-blockquote::after {
-  content: close-quote;
-  inline-size: 27px;
-  block-size: 40px;
-  inset-block-end: 57px;
-  inset-inline-end: 35px;
+  font-family: Alkatra, sans-serif;
+  position: absolute;
+  top: -15%;
+  left: -1rem;
+  font-size: 7rem;
+  color: hsl(210, 71%, 32%);
+  opacity: 0.75;
 }
 
 .contact-form {
@@ -829,7 +785,7 @@ blockquote::after {
   font-size: 1.5rem;
   padding: calc(0.5rem + 5px) 0.5rem 0.5rem 0.5rem;
   border: none;
-  border-block-end: 5px solid #ff5757;
+  border-block-end: 5px solid hsl(0, 100%, 67%);
   border-radius: 2px;
 }
 
@@ -848,7 +804,7 @@ label {
   inset-inline-start: 10px;
 }
 
-.input:not(:-moz-placeholder-shown)~label {
+.input:not(:-moz-placeholder-shown) ~ label {
   background-color: hsl(210, 55%, 90%);
   transform: translateY(-34px) scale(0.9);
   padding: 2px 10px;
@@ -856,8 +812,8 @@ label {
   outline-offset: -1px;
 }
 
-.input:focus~label,
-.input:not(:placeholder-shown)~label {
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
   background-color: hsl(210, 55%, 90%);
   transform: translateY(-34px) scale(0.9);
   padding: 2px 10px;
@@ -933,40 +889,33 @@ hr {
   display: block;
   text-decoration: none;
   -webkit-mask-position: center;
-  mask-position: center;
+          mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-color: hsl(209, 66%, 17%);
   scale: 0.55;
 }
-
 .footer-icon.light {
   background-color: hsl(0, 0%, 95%);
 }
-
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-icon:hover, .footer-icon:focus {
   background-color: hsl(46, 98%, 51%);
 }
-
 .footer-icon.linkedin {
   -webkit-mask-image: url("../../content/logo/linkedin-icon.svg");
-  mask-image: url("../../content/logo/linkedin-icon.svg");
+          mask-image: url("../../content/logo/linkedin-icon.svg");
 }
-
 .footer-icon.github {
   -webkit-mask-image: url("../../content/logo/github-icon.svg");
-  mask-image: url("../../content/logo/github-icon.svg");
+          mask-image: url("../../content/logo/github-icon.svg");
 }
-
 .footer-icon.credly {
   -webkit-mask-image: url("../../content/logo/credly-icon.svg");
-  mask-image: url("../../content/logo/credly-icon.svg");
+          mask-image: url("../../content/logo/credly-icon.svg");
 }
-
 .footer-icon.codepen {
   -webkit-mask-image: url("../../content/logo/codepen-icon.svg");
-  mask-image: url("../../content/logo/codepen-icon.svg");
+          mask-image: url("../../content/logo/codepen-icon.svg");
 }
 
 .copyright {
@@ -1039,11 +988,9 @@ hr {
   margin-inline-start: 2.5rem;
   mix-blend-mode: hard-light;
 }
-
 .cta-btn:focus {
   outline: 4px solid currentColor;
 }
-
 .cta-btn:hover {
   background-position: right;
 }
@@ -1100,9 +1047,7 @@ hr {
   position: relative;
   transition: 450ms;
 }
-
-.animated:focus,
-.animated:hover {
+.animated:focus, .animated:hover {
   padding-inline-end: 1.25em;
   outline: none;
 }
@@ -1136,13 +1081,9 @@ hr {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 .submit-button .send-icon {
   transition: all 450ms ease-in-out;
 }
-
 .submit-button:hover .send-icon {
   transform: rotate(45deg);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
